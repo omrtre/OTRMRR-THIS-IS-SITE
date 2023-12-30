@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .title-logo {
     display: flex;
     flex-direction: column;
@@ -18,10 +22,16 @@
 .container {
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
 .image-bg-container {
     width: 300px;
+    height: auto;
+}
+
+.title-logo-image {
+    width: 500px;
     height: auto;
 }
 
@@ -50,12 +60,17 @@
 .nav-links > ul {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 .nav-links > ul > li {
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Futura';
+    color: #FFF8E7;
+}
+
+.nav-links > ul > li > a {
     color: #FFF8E7;
 }
 
