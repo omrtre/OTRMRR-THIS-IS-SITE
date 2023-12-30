@@ -26,7 +26,6 @@ body {
 }
 
 .image-bg-container {
-    width: 300px;
     height: auto;
 }
 
@@ -55,6 +54,18 @@ body {
     50% {
         transform: translate(0.5%, 0.5%) rotate(3deg);
     } 
+}
+
+.background-video {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(/assets/videos/background.mp4);
 }
 
 .nav-links > ul {
