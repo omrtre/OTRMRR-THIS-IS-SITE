@@ -32,7 +32,7 @@ body {
 .title-logo-img {
     width: 500px;
     height: auto;
-    filter: drop-shadow(2px 2px 10px white);
+    animation: pulse 7s ease-in-out infinite;
 }
 
 .title-blocks {
@@ -83,6 +83,7 @@ body {
 
 .nav-links > ul > li > a {
     color: #FFF8E7;
+    filter: drop-shadow(3px 3px 3px black);
 }
 
 .nav-links > ul > li > a:hover > span.jittery {
@@ -92,4 +93,10 @@ body {
 
 .main-content {
     max-width: 100%;
+}
+
+@keyframes pulse {
+    50% {
+        filter: drop-shadow(2px 2px 10px white);
+    }
 }
