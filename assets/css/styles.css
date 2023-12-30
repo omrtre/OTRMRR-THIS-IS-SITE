@@ -85,20 +85,9 @@ body {
     color: #FFF8E7;
 }
 
-.nav-links > ul > li > a::hover {
+.nav-links > ul > li > a:hover > span.jittery {
     animation: jitter 200ms linear infinite;
     display: inline-block;
-}
-
-.jittery span {
-    animation: jitter 200ms linear infinite;
-    display: inline-block;
-}
-
-@keyframes jitter { 
-    50% {
-        transform: translate(0.5%, 0.5%) rotate(3deg);
-    } 
 }
 
 .main-content {
