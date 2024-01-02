@@ -1,0 +1,149 @@
+/**/
+/* ====== Character Link Icons ======== */
+/**/
+@font-face {
+  font-family: "Futura Now Script";
+  src: url(/assets/fonts/FuturaNowScript-Rg.otf) format("opentype");
+}
+
+.markdown-preview-view h1 .internal-link[href^="apparite_lambda"]:before {
+    content: '';
+  /*padding: -20pt -20pt 15pt 5pt;*/
+    background-image: url("https://i.imgur.com/tasVIq2.png");
+    background-size: 98px 83px;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    height: 83px;
+    width: 99px;
+  }
+  
+  .markdown-preview-view p .internal-link[href^="/apparite_lambda"]:before, [href^="Lambda"]:before {
+    content: '';
+  /*padding: -20pt -20pt 15pt 5pt;*/
+    display: inline-block;
+    background-image: url("https://i.imgur.com/tasVIq2.png");
+    background-size: 49px 42px;
+    width: 50px;
+    height: 41px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .dialogue-plugin-message-title[href^="/apparite_lambda"]:before, [href^="Lambda"]:before {
+    background-image: url("https://i.imgur.com/tasVIq2.png");
+    display: inline-block;
+    background-size: 49px 42px;
+    width: 50px;
+    height: 41px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+  }
+  
+ h1 .internal-link[href^="/cuivrea"]:before {
+    content: '';
+  /*padding: -20pt -20pt 15pt 5pt;*/
+    background-image: url("https://i.imgur.com/UAIXakK.png");
+    background-size: 68px 68px;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    height: 68px;
+    width: 68px;
+  }
+  
+  p .internal-link[href^="/cuivrea"]:before,  li .internal-link[href^="/cuivrea"]:before {
+    content: '';
+  /*padding: -20pt -20pt 15pt 5pt;*/
+    display: inline-block;
+    background-image: url("https://i.imgur.com/UAIXakK.png");
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+  }
+ 
+  p .internal-link, .markdown-preview-view li .internal-link {
+      color: #5c73f2;
+      text-decoration: none;
+      border-bottom: 3px dashed;
+      font-family: 'Futura Now Script';
+      font-weight: 900;
+      font-size: 19px
+  }
+  
+  #hover-text:hover {
+    display: inline-block;
+    animation-name: rise, bob;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+  }
+  
+  
+  .markdown-preview-view h1 .internal-link[href^="/revoltah"]:before {
+    content: '⚙ ';
+    display: inline-block;
+    // position: relative;
+  }
+  
+  .markdown-preview-view p .internal-link[href^="/revoltah"]:before {
+    content: '⚙ ';
+    display: inline-block;
+    position: relative;
+  }
+  
+  .markdown-preview-view h1 .internal-link[href^="Schoole Yopps"]:before {
+    content: '🏫¥';
+    display: inline-block;
+    margin-right: 25px;
+    color: gold;
+  }
+  
+  .markdown-preview-view p .internal-link[href^="Schoole Yopps"]:before {
+    content: '🏫¥';
+    display: inline-block;
+    margin-right: 10px;
+    color: gold;
+  }
+  
+  .markdown-preview-view h1 .internal-link[href^="/yopper"]:before {
+    content: '¥👤';
+    display: inline-block;
+    margin-right: 25px;
+    color: gold;
+  }
+  
+  .markdown-preview-view p .internal-link[href^="/yopper"]:before {
+    content: '¥👤';
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    color: gold;
+  }
+  
+  .markdown-preview-view h1 .internal-link[href^="Apparite Omicron"]:before {
+    content: 'ο';
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+  }
+  
+  .markdown-preview-view p .internal-link[href^="Apparite Omicron"]:before {
+    content: 'ο';
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    /* Fallback: Set a background color. */
+    background: -webkit-linear-gradient(0deg, rgba(255,235,235,1) 10%, rgba(0,0,0,1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

@@ -1,0 +1,60 @@
+---
+layout: contact
+title: Contact?
+permalink: /contact/
+---
+
+<div class="contact-letter-card-container">
+    <div class="contact-letter-card">
+        <div class="contact-letter-content">
+            <div class="cl-title"></div>
+
+            <div class="cl-form">
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Your Phone Number: <input type="number" name="phone-number" /></label>
+                    </p>
+                    <p>
+                        <label>Social: <input type="text" name="social" /></label>
+                    </p>
+                    <p>
+                        <label for="service-select">Service: </label>
+                    </p>
+                    <select id="service-select">
+                        <option value="">Service Purpose</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Commission">Commission</option>
+                    </select>
+                    <p>
+                        <label for="service-select">Work: </label>
+                    </p>
+                    <select id="service-select">
+                        <option value="">Work Type</option>
+                        <optgroup label="Art">
+                            <option value="carcicature">Caricature Illustration</option>
+                            <option value="character">Character Illustration</option>
+                            <option value="full-piece">Full-Piece Work</option>
+                            <option value="Commission">Graphic Design</option>
+                        </optgroup>
+                        <optgroup label="Film">
+                            <option value="animation">Animation</option>
+                            <option value="video">Video</option>
+                        </optgroup>
+                    </select>
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+/**/
+/* ====== Boxes & Gui's ======== */
+/**/
+#box-shadow {
+	border-radius: 12px;
+	padding-left: 1rem;
+	padding-right: 1.5rem;
+	padding-bottom: 0.5rem;
+	width: max-content;
+	border: 2px solid darkgrey;
+    background-color: lightgray;
+	/*box-shadow: 5px 5px 0px var(--background-modifier-border), 5px -5px 0px var(--background-modifier-border), -5px -5px 0px var(--background-modifier-border), -5px 5px 0px var(--background-modifier-border);*/
+	/*filter:drop-shadow(4px 4px 1px var(--background-secondary-alt));*/
+}
+
+#txtbx-sb, blockquote#txtbx-sb {
+	display: inline-block;
+    font-family: "Core Sans G";
+	filter: drop-shadow(2px 2px 3px #090233);
+	background-color: #090233;
+	border: 30px solid transparent;
+	border-image: url("/assets/app/uniwki/system-ui/gui/gui_uniwki-rpg_TxtBx-Screw.png") 45 repeat;
+	background-clip: padding-box;	
+	padding: 10px;
+	max-width: 400px;
+}
+
+#txtbx-sb-acc-gold {
+    color: #ffc847;
+    font-family: 'Core Sans G';
+    font-style: bold;
+    font-size: 18px;
+    filter: drop-shadow(0 1px 0px #893313);
+}
+
+#txtbx-sb > p, #txtbx-sb > q, blockquote > p {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: gold;
+	font-style: italic;
+	filter: drop-shadow(0 2px 0px #862b00);
+  }
