@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
-    <body>
-        <div class="wrapper">
-            <main>{{ content }}</main>
-        </div>
-        <footer></footer>
-    </body>
+  {% include head.html %}
+  {% include globalVars.html %}
+  {% if page.id == "comic" %}
+    <style>
+      .containerScreen {
+        padding-bottom: 35em;
+      }
+    </style>
+  {% endif %}
+  <body>
+    <div class="containerScreen">
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </body>
 </html>

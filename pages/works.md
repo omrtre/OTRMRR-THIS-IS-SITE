@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 <div id="pitch-container">
     <div class="container">

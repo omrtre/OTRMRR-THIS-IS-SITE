@@ -1,0 +1,209 @@
+---
+layout: default
+title: Comic
+permalink: /comic/
+id: comic
+---
+<div class="layoutComicGrain" id="bgView"></div>
+<div class="layoutComicBG"></div>
+<div class="layoutComicContainer">
+    <div class="layoutHeaderNode">
+        <div class="layoutHeaderLogo">
+            <img src="/assets/app/otrmrr/title/oturtmurr-logo.jpg" height="auto" width="150">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="/profile"><span class="jittery">ABOUT!</span></a></li>
+                <li><a href="/works"><span class="jittery">WORK.</span></a></li>
+                <li><a href="/contact"><span class="jittery">CONTACT?</span></a></li>
+                <li><a href="/theatre"><span class="jittery">THEATRE</span></a></li>
+                <li><a href="/jukebox"><span class="jittery">JUKEBOX</span></a></li>
+                <li><a href="/comic"><span class="jittery">BLOG</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="layoutComicPanels">
+        {% for x in site.posts %}
+            
+            {% case x.panelMeta.panelPostType %}
+                {% when 'dialogue' %}
+                    <div class="panelBlockContainer">
+                        <div class="panelVignetteBlock" data-panel-type="{{x.panelMeta.panelPostType}}" id="dialogue">
+                            <div class="panelVignetteImage">
+                                <a href="{{x.url}}">
+                                    <div class="panelDialogueSpeechBubble-Container">
+                                        <div class="panelDialogueProfile">
+                                            {% if x.charData %}
+                                                <div class="panelDialogueActorContainer">
+                                                    <div class="panelDialogueActor">{{ site.data.actorSprite.[x.charData.charName].svg }}</div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        <div class="panelDialogueBubble">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="730px" height="300px">
+                                                <defs>
+                                                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="-6px" y="-6px" width="736px" height="300px"  >
+                                                    <feOffset in="SourceAlpha" dx="-6.309" dy="9.011" />
+                                                    <feGaussianBlur result="blurOut" stdDeviation="5.292" />
+                                                    <feFlood flood-color="rgb(68, 81, 245)" result="floodOut" />
+                                                    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                                    <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+                                                    <feMerge>
+                                                    <feMergeNode/>
+                                                    <feMergeNode in="SourceGraphic"/>
+                                                    </feMerge>
+                                                </filter>
+                                                <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="0%" y2="150%">
+                                                <stop offset="50%" stop-color="rgb(82,191,255)" stop-opacity="0" />
+                                                <stop offset="100%" stop-color="rgb(82,191,255)" stop-opacity="1" />
+                                                </linearGradient>
+
+                                                </defs>
+                                                <g filter="url(#Filter_0)">
+                                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                                d="M619.031,252.1000 L135.281,252.1000 C119.817,252.1000 107.281,240.464 107.281,224.1000 L107.281,175.312 L65.037,150.866 L107.281,126.420 L107.281,65.1000 C107.281,50.536 119.817,37.1000 135.281,37.1000 L619.031,37.1000 C634.495,37.1000 647.031,50.536 647.031,65.1000 L647.031,224.1000 C647.031,240.464 634.495,252.1000 619.031,252.1000 Z"/>
+                                                </g>
+                                                <foreignObject x="150" y="70" width="450" height="200">
+                                                    <p id="dialogueText" xmlns="http://www.w3.org/1999/xhtml">{{ x.charData.charDialogue }}</p>
+                                                </foreignObject>
+                                                
+                                                <path stroke="rgb(255, 255, 255)" stroke-width="12px" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="20px" stroke="rgb(255, 255, 255)" fill="url(#PSgrad_0)"
+                                                d="M619.031,252.1000 L135.281,252.1000 C119.817,252.1000 107.281,240.464 107.281,224.1000 L107.281,175.312 L65.037,150.866 L107.281,126.420 L107.281,65.1000 C107.281,50.536 119.817,37.1000 135.281,37.1000 L619.031,37.1000 C634.495,37.1000 647.031,50.536 647.031,65.1000 L647.031,224.1000 C647.031,240.464 634.495,252.1000 619.031,252.1000 Z"/>
+                                            
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>     
+                            <div class="panelVignetteIcon" id="{{x.panelMeta.panelPostType}}"></div>
+                        </div>
+                    </div>
+                {% when 'film' %}
+                <div class="panelBlockContainer" id="{{x.panelMeta.panelBlockType}}">
+                    <div class="panelVignettePost" data-panel-type="{{x.panelMeta.panelPostType}}" id="{{x.panelMeta.panelBlockType}}">
+                        <div data-depth="0.2" class="panelBorder" style="z-index: 5;"></div>
+                        <div data-depth="0.1" class="panelVignetteImage" id="rectangle">
+                            <a href="{{x.url}}"><img src="/assets/app/otrmrr/posts/panel/{{ x.panelMeta.panelPostImage }}" height="100%" width="auto"></a>
+                        </div>
+                        <div class="panelVignetteIcon" id="{{x.panelMeta.panelPostType}}"></div>
+                    </div>                    
+                </div>
+                {% when 'illustration' %}
+                    
+                    {% case x.panelMeta.panelBlockType %}
+
+                        {% when 'trapezoidLeft' %}
+                            <div class="panelBlockContainer" id="{{x.panelMeta.panelBlockType}}">
+                                <div class="panelVignettePost" data-panel-type="{{x.panelMeta.panelPostType}}" id="{{x.panelMeta.panelBlockType}}">
+                                    <div class="panelVignetteImage" id="trapezoidLeft">
+                                        <a href="{{x.url}}"><img src="/assets/app/otrmrr/posts/panel/{{ x.panelMeta.panelPostImage }}" height="100%" width="auto"></a>
+                                    </div>
+                                    <div class="panelVignetteIcon" id="{{x.panelMeta.panelPostType}}"></div>
+                                </div>
+                            </div>
+                        {% when 'trapezoidRight' %}
+                            <div class="panelBlockContainer" id="{{x.panelMeta.panelBlockType}}">
+                                <div class="panelVignettePost" data-panel-type="{{x.panelMeta.panelPostType}}" id="{{x.panelMeta.panelBlockType}}">
+                                    <div class="panelVignetteImage" id="trapezoidRight">
+                                        <a href="{{x.url}}"><img src="/assets/app/otrmrr/posts/panel/{{ x.panelMeta.panelPostImage }}" height="100%" width="auto"></a>
+                                    </div>
+                                    <div class="panelVignetteIcon" id="{{x.panelMeta.panelPostType}}"></div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="panelBlockContainer" id="rectangle" data-pointer-events="true">
+                                <div data-depth="0.2" class="panelBorder" style="z-index: 5; pointer-events: none;"></div>
+                                <div data-depth="0.1" class="panelVignettePost" data-panel-type="{{x.panelMeta.panelPostType}}" id="rectangle">
+                                    <div class="panelVignetteImage" id="rectangle">
+                                        <a href="{{x.url}}"><img src="/assets/app/otrmrr/posts/panel/{{ x.panelMeta.panelPostImage }}" height="100%" width="auto"></a>
+                                    </div>
+                                    <div class="panelVignetteIcon" id="{{x.panelMeta.panelPostType}}"></div>
+                                </div>
+                            </div>
+                    {% endcase %}
+
+                {% else %}
+                <div class="panelBlockContainer">
+                    <div data-depth="0.2" class="panelBorder" style="z-index: 5;"></div>
+                    <div data-depth="0.1" class="panelVignettePost" id="vignette">
+                        <div class="panelVignetteImage">
+                            <a href="{{x.url}}"><img src="/assets/app/otrmrr/posts/panel/{{ x.panelMeta.panelPostImage }}" height="100%" width="auto"></a>
+                        </div>
+                        <div class="panelVignetteIcon" id="{{x.panelMeta.panelPostType}}"></div>
+                    </div>                    
+                </div>
+            {% endcase %}
+
+        {% endfor %}
+    </div>
+</div>
+<script>
+    var options = {
+        animate: true,
+        patternWidth: 100,
+        patternHeight: 100,
+        grainOpacity: 0.05,
+        grainDensity: 1,
+        grainWidth: 1,
+        grainHeight: 1
+    };
+
+    grained('#bgView',options)
+
+
+
+    window.addEventListener("load", function() {
+        // Function to update the width of the .panelBorder
+        function updatePanelBorderWidth() {
+            var containers = document.querySelectorAll('.panelBlockContainer');
+            containers.forEach(function(container) {
+                var border = container.querySelector('.panelBorder');
+                var vignettePost = container.querySelector('.panelVignettePost');
+                if (border && vignettePost) {
+                    border.style.width = vignettePost.offsetWidth + 'px';
+                }
+            });
+        }
+
+        // Update width on load
+        updatePanelBorderWidth();
+
+        // Update width on window resize
+        window.addEventListener('resize', updatePanelBorderWidth);
+    });
+
+    var domScene = document.querySelectorAll('.panelBlockContainer#rectangle');
+
+    domScene.forEach(panelBlock => {
+        var parallaxInstance = new Parallax(panelBlock);
+
+    })
+
+    let domComicPanel = document.querySelectorAll('.panelBlockContainer');
+    let domComicPanelContent = document.querySelectorAll('.panelVignetteImage');
+
+    domComicPanel.forEach((panel, index) => {
+        const content = domComicPanelContent[index];
+
+        panel.addEventListener("mouseover", (event)=> {
+            gsap.to(panel, {y: -20, scale:1.2, zIndex: 9, yoyo: true, ease: 'expo.inOut'})
+            //gsap.to(panel, {keyframes: [{ '-webkit-filter': 'drop-shadow(0 0 5px #fff8e7)'},{'-webkit-filter': 'drop-shadow(0 0 2px #fff8e7)'}], repeat: -1,duration:5})
+            if (content) {
+                gsap.to(content, {scale:.95});
+            }
+        });
+        panel.addEventListener("mouseout", (event)=> {
+            gsap.to(panel, {y: -0, scale:1, zIndex: 1});
+            if (content) {
+                gsap.to(content, {scale:1});
+            }
+        });
+    });
+
+
+
+
+</script>
