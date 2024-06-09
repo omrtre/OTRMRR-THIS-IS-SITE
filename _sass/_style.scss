@@ -397,26 +397,24 @@ a.uki-ftr-atr-link {
 	background-size: cover;
 }
 
-@supports selector(::-webkit-scrollbar) {
-	.layoutComicPanels::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background: rgb(242, 242, 242);
-		border-color: rgb(116, 116, 116);
-		width: 20px;
-		overflow: unset;
-	}
-	.layoutComicPanels::-webkit-scrollbar {
-		border-width: 4px;
-		border-color: rgb(116, 116, 116);
-		border-style: solid;
-		background: rgb(35, 35, 35);
-	}
+.layoutComicPanels::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgb(242, 242, 242);
+	border-color: rgb(116, 116, 116);
+	width: 20px;
+	overflow: unset;
+}
+.layoutComicPanels::-webkit-scrollbar {
+	border-width: 4px;
+	border-color: rgb(116, 116, 116);
+	border-style: solid;
+	background: rgb(35, 35, 35);
+}
 
-	.layoutComicPanels::-webkit-scrollbar-track {
-		background: rgb(0,0,0);
-		border: 4px solid transparent;
-		background-clip: content-box;
-	}
+.layoutComicPanels::-webkit-scrollbar-track {
+	background: rgb(0,0,0);
+	border: 4px solid transparent;
+	background-clip: content-box;
 }
 
 .panelDialogueSpeechBubble-Container {
