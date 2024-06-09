@@ -8,7 +8,14 @@ layout: default
 
         </div>
         <div class="layoutPostContent">
-            {{ content }}
+            {% contentblock image %}
+            <div class="layoutPostMain">
+                {{ content }}
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    
+</script>
