@@ -9,8 +9,6 @@ id: comic
     padding-bottom: 35em;
 }
 </style>
-<div class="layoutComicGrain" id="bgView"></div>
-<div class="layoutComicBG"></div>
 <div class="layoutComicContainer">
     <div class="layoutHeaderNode">
         <div class="layoutHeaderLogo">
@@ -146,19 +144,6 @@ id: comic
     </div>
 </div>
 <script>
-    var options = {
-        animate: true,
-        patternWidth: 100,
-        patternHeight: 100,
-        grainOpacity: 0.05,
-        grainDensity: 1,
-        grainWidth: 1,
-        grainHeight: 1
-    };
-
-    grained('#bgView',options)
-
-
 
     window.addEventListener("load", function() {
         // Function to update the width of the .panelBorder

@@ -136,53 +136,53 @@ a.uki-ftr-atr-link {
 }
 
 .uki-ftr-info > p {
-  font-family: "Futura Next Light";
-  font-style: light;
-  color: beige;
+	font-family: "Futura Next Light";
+	font-style: light;
+	color: beige;
 }
 
 .uniwki-footer-version-container {
-  position: absolute;
+	position: absolute;
 }
 
 .uki-ftr-vers {
-  position: fixed;
-  right: 0;
-  z-index: 999;
-  bottom: 0;
+	position: fixed;
+	right: 0;
+	z-index: 999;
+	bottom: 0;
 }
 
 .uki-ftr-vers > p {
-  margin: 0;
-  filter: drop-shadow(2px 2px 0px rgb(84, 11, 102));
-  font-family: "02.10ital";
-  color: goldenrod;
-  font-size: 18px;
-  font-variant: petite-caps;
-  margin-right: 10px;
+	margin: 0;
+	filter: drop-shadow(2px 2px 0px rgb(84, 11, 102));
+	font-family: "02.10ital";
+	color: goldenrod;
+	font-size: 18px;
+	font-variant: petite-caps;
+	margin-right: 10px;
 }
 
 .uki-footer-credits {
-  background-image: linear-gradient(#000, rgb(43, 43, 43));
-  background-color: rgb(43, 43, 43);
-  padding: 65px 0px;
-  position: relative;
-  z-index: 15;
+	background-image: linear-gradient(#000, rgb(43, 43, 43));
+	background-color: rgb(43, 43, 43);
+	padding: 65px 0px;
+	position: relative;
+	z-index: 15;
 }
 
 .title-introduction {
-  height: 100vh;
-  width: auto;
+	height: 100vh;
+	width: auto;
 }
 
 .character-introductions {
-  margin: 80px auto;
-  max-width: 800px;
+	margin: 80px auto;
+	max-width: 800px;
 }
 
 .character-headline {
-  font-family: "Archer Pro Medium";
-  font-style: normal;
+	font-family: "Archer Pro Medium";
+	font-style: normal;
 }
 
 .character-description > p,
@@ -215,7 +215,7 @@ a.uki-ftr-atr-link {
 
 .layoutComicContainer {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	max-width: 65em;
 	margin: 0 auto;
 	overflow: clip;
@@ -236,6 +236,7 @@ a.uki-ftr-atr-link {
 .layoutComicPanels {
 	display: flex;
 	flex-wrap: wrap;
+	height: auto;
 	max-height: 860px;
 	overflow-y: scroll;
 	justify-content: space-evenly;
@@ -324,7 +325,7 @@ a.uki-ftr-atr-link {
 .panelVignetteIcon {
 	width: 27px;
 	height: 20px;
-	padding: 5px;
+	padding: 20px;
 	right: 0;
 	position: absolute;
 	bottom: 0;
@@ -490,4 +491,209 @@ a.uki-ftr-atr-link {
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+.layoutPost {
+	display: grid;
+	grid-template-areas: 'sidebar content';
+	grid-template-columns: 260px 1fr;
+	grid-template-rows: 100vh;
+}
+
+.layoutPostSidebarContainer {
+	width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.layoutPostSidebar {
+	grid-area: sidebar;
+	width: 100%;
+    height: 100%;
+    background: lightgrey;
+}
+
+.layoutPostSiderbarTitleContainer {
+	position: relative;
+    height: 100%;
+    z-index: 5;
+    float: right;
+}
+
+.layoutPostSidebarTitle {
+	font-family: "Creative Block Negative";
+    font-size: 2em;
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    /*right: -40px;*/
+    height: auto;
+    width: max-content;
+    background-color: #7c7c7c;
+    padding: 10px;
+    font-variant: petite-caps;
+}
+
+.layoutPostSidebarTitle::after {
+    width: 0;
+    height: 0;
+    border-top: 60px solid #b8b8b8;
+    border-right: 57px solid rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+}
+
+.layoutPostSidebaritle-Date {
+	font-family: 'Bravecho';
+	position: absolute;
+	font-style: italic;
+	writing-mode: vertical-rl;
+    text-orientation: mixed;
+	color: goldenrod;
+	bottom: 0;
+	padding: 10px;
+	padding-bottom: 30px;
+    right: -25px;
+    font-size: 2em;
+}
+
+.layoutPostContent {
+	grid-area: content;
+}
+
+.layoutOpenSeaViewer {
+	margin: 0 auto;
+	position: relative;
+}
+
+.layoutPostMain {
+	padding: 20px;
+    margin: 0 auto;
+    background: grey;
+    border: 2px #494949 solid;
+    border-radius: 30px;
+}
+
+.uiOTRMRR_txtContentContainer {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#oz.uiOTRMRR_txtContent {
+	position: absolute;
+	height: auto;
+	width: max-content;
+	right: 0;
+	z-index: 5;
+	bottom: 100px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#oz.uiOTRMRR_txtContent-Title {
+	//width: 100%;
+	//height: max-content;
+	transform: rotate(270deg);
+	position: absolute;
+	//right: 70px;
+	//bottom: -70px;
+	bottom: 40px;
+}
+
+#oz.uiOTRMRR_txtContent-Title > img {
+	width: 300px;
+	height: auto;
+}
+
+
+.uiOTRMRR_txtContent-Desc {
+	position: relative;
+	width: 500px;
+}
+
+#oz.uiOTRMRR_txtContent-Desc {
+	writing-mode: sideways-lr;
+	width: max-content;
+	height: 350px;
+	color: gold;
+	text-shadow: 2px -2px 1px brown;
+	line-height: 1.3;
+	letter-spacing: 1.3px;
+}
+
+#otto.uiOTRMRR_txtContent-Desc {
+	text-orientation: mixed;
+	writing-mode: sideways-rl;
+	width: auto;
+	height: 330px;
+	line-height: 1.25;
+}
+
+
+#otto.uiOTRMRR_txtContent {
+	position: absolute;
+	height: auto;
+	width: max-content;
+	left: 5px;
+	z-index: 5;
+	top: 5px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	text-shadow: 0 0 5px black;
+}
+
+#otto.uiOTRMRR_txtContent-Title {
+	height: 100%;
+	width: 100%;
+}
+
+#otto.uiOTRMRR_txtContent-Title > img {
+	width: 200px;
+	height: auto;
+}
+
+#blurb.uiOTRMRR_txtContent-Desc {
+	color: #e5f6f5;
+	font-style: italic;
+	font-family: "Futura Now Script";
+	font-weight: bold;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	height: max-content;
+	text-align: center;
+	width: 400px;
+	text-wrap: balance;
+	text-justify: distribute;
+}
+
+.uiOTRMRR_charSpriteActor > img {
+	height: auto;
+	width: 100vw;
+	position: absolute;
+}
+
+#bgFutureHaze.uiOTRMRR_bgVisualizer {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	filter: contrast(107%) hue-rotate(-3deg) opacity(0.89) brightness(1.4);
+}
+
+.uiOTRMRR_charSpriteScene {
+	pointer-events: none;
 }

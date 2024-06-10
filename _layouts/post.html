@@ -4,11 +4,18 @@ layout: default
 
 <div class="layoutPostContainer">
     <div class="layoutPost">
-        <div class="layoutPostSidebar">
-
+        <div class="layoutPostSidebarContainer">
+            <div class="layoutPostSiderbarTitleContainer">
+                <div class="layoutPostSidebarTitle">{{page.title}}</div>
+                <div class="layoutPostSidebaritle-Date">{{page.date | date: "%m %d ' %y" }}</div>
+            </div>
+            
+            <div class="layoutPostSidebar"></div>
         </div>
         <div class="layoutPostContent">
-            {% contentblock image %}
+            <div class="layoutOpenSeaViewer" id="imageViewer" style= "width: 900px; height: 720px;">
+
+            </div>
             <div class="layoutPostMain">
                 {{ content }}
             </div>
@@ -17,5 +24,12 @@ layout: default
 </div>
 
 <script>
-    
+    var viewer = OpenSeadragon({
+        id: "imageViewer",
+        prefixUrl: "/assets/global/js/images/",
+        tileSources: {
+            type: 'image',
+            url: "/assets/app/otrmrr/artwork/illustration/{{ page.postMeta.artworkSrc }}"
+        }
+    });
 </script>

@@ -5,31 +5,87 @@ permalink: /profile/
 ---
 
 <div class="containerScreen">
-    <div class="uiOTRMRR_txtContent">
+    <div class="uiOTRMRR_txtContentContainer">
         <div class="uiOTRMRR_txtContent" id="oz">
-            <div class="uiOTRMRR_txtContent-Title">
-                <img src="">
+            <div id="oz" class="uiOTRMRR_txtContent-Title">
+                <img src="/assets/app/otrmrr/title/oz-the-operator-title.png">
             </div>
-            <div class="uiOTRMRR_txtContent-Desc"><p>I am a Illustrator first--the rest of what I am is born from that. A Creative Entrepeneur entails the development and production of Original Works for a young adult multicultral audience.</p></div>
+            <div class="uiOTRMRR_txtContent-Desc" id="oz"><p>Illustrator first, and all that comes from that is natural talent. My name is Oz, your illustrious host in charge of directing the Omnibus and broadcasting its' feed.</p></div>
         </div>
         <div class="uiOTRMRR_txtContent" id="otto">
-            <div class="uiOTRMRR_txtContent-Title">
-                <img src="">
+            <div id="otto" class="uiOTRMRR_txtContent-Title">
+                <img src="/assets/app/otrmrr/title/title_oz-cc.svg">
             </div>
-            <div class="uiOTRMRR_txtContent-Desc"><p>I'm the manager of the whole joint, i'm the guy responsible for legal concerns and the man you talk to get a collaboration! Me and my buddy over here are both dedicated to the craft of taking an idea and pushing it to its' breaking point. Ya' hear? Exploring all possible creative avenues, to create the best, most imaginative high-quality of that product there is.</p><p>You best believe we’re working in the lab day and night to succeed the greatest!</p></div>
+            <div class="uiOTRMRR_txtContent-Desc" id="otto"><p>Manager of the whole joint. I'm the guy responsible for legalities and the "operation", ya get me? Me and my buddy over here are dedicated to the craft of taking an idea and pushing it to its' breaking point.</p><p>You best believe we’re working in the lab day and night to succeed the greatest!</p></div>
         </div>
-        <div class="uiOTRMRR_txtContent-Desc"><p>The otomatopioea of "rising ambition"— a running xylophone beat, an opera and orchestral suite makes the name.</p></div>
-        <div class="uiOTRMRR_txtContent-Desc"><p><span class="jittery">OTURTMURR</span> is a creative duo, Oz the Operator :: the Artist and his familiar, Otto von Bruno :: the Manager, work together to produce high-concept ideas for <span class="jittery">OTURTWORKS</span> and other new-fangled illustrious creative work and products.</p></div>
+        <div class="uiOTRMRR_txtContent-Desc" id="blurb"><p>A enigmatic stylish duo, its' host and manager work on the Omnibus:: <span class="jittery" style="font-family: Creative Block Negative;">OTURTWORKS</span>, in their effort to perserve space-time and fend off fourth-dimensional beings through the power of fiction and the weapon of storytelling.</p></div>
     </div>
-    <div class="uiOTRMRR_charSprite">
-        <div class="uiOTRMRR_charSpriteActor" id="oz">
-            <img src="">
+    <div class="uiOTRMRR_charSpriteScene" id="ifxParallax">
+        <div data-depth="0.4" class="uiOTRMRR_charSpriteActor" id="oz">
+            <img src="/assets/app/otrmrr/sprite/ozBehold.svg">
         </div>
-        <div class="uiOTRMRR_charSpriteActor" id="otto">
-            <img src="">
+        <div data-depth="0.6" class="uiOTRMRR_charSpriteActor" id="otto">
+            <img src="/assets/app/otrmrr/sprite/ottoStand.svg">
         </div>
     </div>
-    <div class="uiOTRMRR_bgVisualizer">
+    <div class="uiOTRMRR_bgVisualizer" id="bgFutureHaze">
         <div id="_bgDim"></div>
     </div>
 </div>
+
+<script id="vertexShader" type="x-shader/x-vertex">
+    uniform float iGlobalTime;
+    uniform vec2 iResolution;
+    uniform vec4 iMouse;
+    uniform float audio1;
+    uniform sampler2D iChannel0;
+    uniform sampler2D iChannel1;
+
+    varying vec2 vUv;
+    void main() {
+        vUv = uv;
+        vec4 mvPosition = modelViewMatrix * vec4(position, 1.5 );
+        gl_Position = projectionMatrix * mvPosition;
+    }
+</script>
+    
+<script id="fragmentShader" type="x-shader/x-fragment">
+    uniform float iGlobalTime;
+    uniform vec2 iResolution;
+    uniform vec4 iMouse;
+    uniform float audio1;
+    uniform sampler2D iChannel0;
+    uniform sampler2D iChannel1;
+
+    #define t iGlobalTime
+    mat2 m(float a){float c=cos(a), s=sin(a);return mat2(c,-s,s,c);}
+    float map(vec3 p){
+        p.xz*= m(1.3);
+        p.xy*= m(.4) ;
+        vec3 q = p*3.5+t;
+        return  p.x*p.y * length(p+vec3(sin(1.7)))*log(length(p)+1.) + sin(q.x+sin(q.z+sin(q.y)))*0.7 - 1.0 ;
+    }
+
+    void main(){
+        vec2 p = gl_FragCoord.xy/iResolution.y - vec2(1.0,0.8) ;
+        vec3 cl = vec3(0.1, 0.2, 0.3);
+        float d = 5.5;
+        for(int i=0; i<=5; i++) {
+            vec3 p = vec3(0,.2,6.) + normalize(vec3(p, -3.0))*d ;
+            float rz = map(p);
+        float f =  clamp((rz - map(p+.1)) * 0.5 * cos(iGlobalTime*.2) * p.x, -.1, .5 );
+            vec3 l = vec3(0.11, 0.09, 0.2) + vec3(0.7, 0.9, 1.5) * f;
+            cl = cl*l + (1.2-smoothstep(0.8, 2.5, rz))*.7*l;
+        d += min(rz, 0.8 );
+        }
+        gl_FragColor = vec4(cl, 1.0);
+    }
+</script>
+
+<script type="module" src="/assets/app/otrmrr/js/bgFutureHaze.js"></script>
+
+<script>
+    var domScene = document.getElementById('ifxParallax');
+    var parallaxInstance = new Parallax(domScene);
+
+</script>
