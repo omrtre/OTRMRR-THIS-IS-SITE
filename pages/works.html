@@ -4,21 +4,43 @@ title: Work.
 permalink: /works/
 ---
 
-<div class="containerScreen">
-    <div class="sceneWorksView_Shelf">
-        <div class="scnWorks-ObjBookcase">
-            <div class="scnWorks_ObjBookcaseRow" id="Opera">
-                <div class="scnWrks_ObjBookcasePlaque" id="Opera">
-                    <p>Omniopera</p>
-                </div>
-                <div class="scnWorks-ObjOmniopus" id=""></div>
+<div class="sceneWorksView_Shelf">
+    <div class="scnWorks-ObjBookcase">
+        <div class="scnWorksBookcaseSection" id="opera">
+            <div class="scnWrks_ObjBookcasePlaque" id="opera">
+                <p>Omniopera</p>
             </div>
-            <div class="scnWorks_ObjBookcaseRow" id="Artworks">
-                <div class="scnWrks_ObjBookcasePlaque" id="Artworks">
-                    <p>Artworks</p>
+            <div class="scnWorks_ObjBookcaseRow" id="opera">
+                <div class="scnWorks-ObjOmniopus" id="opera">
+                    {% for o in site.data.works.collections %}
+                        <div class="objOmnibusCase" id="{{o.name}}">
+                            <object data="/assets/app/otrmrr/res/omnibus-EGO.svg" type="image/svg+xml"></object>
+                        </div>
+                    {% endfor %}
                 </div>
-                <div class="scnWorks-ObjOmniopus" id=""></div>
+            </div>
+        </div>
+        <div class="scnWorksBookcaseSection" id="zine">
+            <div class="scnWrks_ObjBookcasePlaque" id="zine">
+                <p>Zines</p>
+            </div>
+            <div class="scnWorks_ObjBookcaseRow" id="zine">
+                <div class="scnWorks-ObjOmniopus" id="zine"></div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    const domOmnibus = document.querySelectorAll('.objOmnibusCase')
+
+    domOmnibus.forEach(omnibus => {
+        omnibus.addEventListener("mouseover", ()=> {
+            gsap.to(omnibus, {scale:1.4, zIndex: 5, ease:'expo.inOut'})
+        });
+
+        omnibus.addEventListener("mouseout", ()=> {
+            gsap.to(omnibus, {scale:1,  zIndex: 1, ease:'expo.outIn'})
+        });
+    });
+</script>
