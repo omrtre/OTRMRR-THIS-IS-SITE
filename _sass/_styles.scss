@@ -271,7 +271,7 @@ a.uki-ftr-atr-link {
 	position: absolute !important;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: 50;
 	pointer-events: none;
 
 }
@@ -768,4 +768,188 @@ a.uki-ftr-atr-link {
 	width: 200px;
 	height: auto;
 	margin-right: 1.5em;
+}
+
+.sceneContact {
+	width: 100%;
+	height: 100%;
+}
+
+.scnContact-ObjectComissionBoard {
+	position: absolute;
+	width: 34rem;
+	height: auto;
+	z-index: 2;
+	rotate: 5deg;
+	right: 83px;
+	top: 100px;
+	filter: drop-shadow(20px -10px 17px #1a0000);
+}
+
+.scnContact-ObjectTypewritter {
+	position: absolute;
+	width: 34rem;
+	height: auto;
+	z-index: 12;
+	rotate: -15deg;
+	left: 83px;
+	top: 100px;
+	filter: drop-shadow(0 -10px 17px #1a0000);
+}
+
+.sceneContactView_Flatlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.scnContactView_ContactTable {
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.sceneContactView_TypewritterGUI, .sceneContactView_ComissionBoardGUI {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000000;
+}
+
+.sceneContactView_Typewritter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+}
+
+.sceneContactView_ComissionBoard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sCType-ObjPaper {
+    background-color: #fff8e7;
+    max-width: 40em;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    top: 6px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-image: linear-gradient(0deg, #e7bea0, transparent);
+    bottom: auto;
+    overflow-y: scroll;
+	border-top: 2px solid #3f1702;
+    border-left: 2px solid #3f1702;
+    border-right: 2px solid #3f1702;
+}
+
+.sCType-ObjTypewritterMain {
+    position: absolute;
+    margin: auto;
+    top: 50em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 58em;
+    height: max-content;
+}
+
+
+
+.sCType-ObjComissionBoard {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 48em;
+    height: max-content;
+}
+
+.sCType-ObjPaperContent {
+    padding: 30px;
+    color: saddlebrown;
+}
+
+.sceneContactView_TextContent {
+    position: absolute;
+    width: 150px;
+    font-size: 6px;
+    color: #fff8e7;
+    margin-left: 20px;
+    top: 180px;
+}
+
+.menuWindowAction::before {
+	display: block;
+	content: '❌';
+	width: 30px;
+	height: 30px;
+}
+
+.menuWindowAction {
+	position: absolute;
+	z-index: 20;
+	right: 0;
+}
+
+.scnContact-PotraitPhoto {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    z-index: 4;
+    rotate: 19deg;
+    left: 520px;
+    top: 100px;
+}
+
+.scnContact-InkBottle {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    z-index: 5;
+    left: 700px;
+    top: 240px;
+    filter: drop-shadow(5px -10px 17px #1a0000);
+}
+
+#one.scnContact-ObjMail {
+    position: absolute;
+    width: 24rem;
+    height: auto;
+    z-index: 4;
+    rotate: 8deg;
+    left: 460px;
+    top: 640px;
+}
+
+#two.scnContact-ObjMail {
+    position: absolute;
+    width: 24rem;
+    height: auto;
+    z-index: 4;
+    rotate: 15deg;
+    left: 560px;
+    top: 640px;
+}
+
+#three.scnContact-ObjMail {
+    position: absolute;
+    width: 24rem;
+    height: auto;
+    z-index: 3;
+    rotate: 0deg;
+    left: 360px;
+    top: 540px;
 }

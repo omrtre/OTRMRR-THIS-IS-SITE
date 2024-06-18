@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1255.1 1374.53">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-11);
+      }
+
+      .cls-2 {
+        fill: #f0d1c1;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #c97146;
+      }
+
+      .cls-4 {
+        fill: #d9d124;
+      }
+
+      .cls-28, .cls-29, .cls-30, .cls-31 {
+        font-family: Futura-Bold, Futura;
+        font-weight: 700;
+      }
+
+      .cls-28, .cls-21 {
+        fill: #e1e2e1;
+      }
+
+      .cls-5 {
+        fill: #000;
+      }
+
+      .cls-32 {
+        font-family: Parchment-Regular, Parchment;
+        font-size: 70px;
+      }
+
+      .cls-32, .cls-33, .cls-29, .cls-30, .cls-31 {
+        fill: #231f20;
+      }
+
+      .cls-6 {
+        fill: #171818;
+      }
+
+      .cls-33 {
+        font-family: Wingdings-Regular, Wingdings;
+      }
+
+      .cls-33, .cls-31, .cls-34 {
+        font-size: 20px;
+      }
+
+      .cls-7 {
+        fill: #401212;
+        opacity: .5;
+      }
+
+      .cls-8, .cls-35 {
+        fill: #cc845c;
+      }
+
+      .cls-36 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-9 {
+        fill: #727475;
+      }
+
+      .cls-37 {
+        clip-path: url(#clippath-13);
+      }
+
+      .cls-38 {
+        isolation: isolate;
+      }
+
+      .cls-39 {
+        stroke: #727475;
+        stroke-width: 4px;
+      }
+
+      .cls-39, .cls-11 {
+        fill: none;
+      }
+
+      .cls-39, .cls-35 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-10 {
+        fill: #1c0b0d;
+      }
+
+      .cls-40 {
+        clip-path: url(#clippath-15);
+      }
+
+      .cls-12 {
+        fill: #f1f0f0;
+      }
+
+      .cls-13 {
+        fill: #39130f;
+      }
+
+      .cls-14 {
+        fill: #fcdcca;
+      }
+
+      .cls-15 {
+        fill: #c1e1e1;
+      }
+
+      .cls-41 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-42 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-16 {
+        fill: #99c1c9;
+      }
+
+      .cls-17 {
+        fill: #1e0000;
+      }
+
+      .cls-18 {
+        fill: #6cceec;
+      }
+
+      .cls-43 {
+        clip-path: url(#clippath-12);
+      }
+
+      .cls-29 {
+        font-size: 14px;
+      }
+
+      .cls-44 {
+        filter: url(#luminosity-invert);
+      }
+
+      .cls-30 {
+        font-size: 12px;
+      }
+
+      .cls-19 {
+        fill: #f2c4aa;
+      }
+
+      .cls-35 {
+        stroke: #1e0f11;
+        stroke-width: 3px;
+      }
+
+      .cls-20 {
+        fill: #df1f26;
+      }
+
+      .cls-45 {
+        clip-path: url(#clippath-9);
+      }
+
+      .cls-46 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-22 {
+        fill: #f1c4a7;
+      }
+
+      .cls-23 {
+        fill: #efb291;
+      }
+
+      .cls-47 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-48 {
+        clip-path: url(#clippath-8);
+      }
+
+      .cls-24 {
+        fill: #7d3d28;
+      }
+
+      .cls-25 {
+        fill: #efb21e;
+      }
+
+      .cls-49 {
+        mask: url(#mask);
+      }
+
+      .cls-50 {
+        font-size: 29px;
+        letter-spacing: .3em;
+      }
+
+      .cls-51 {
+        clip-path: url(#clippath-14);
+      }
+
+      .cls-52 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-26 {
+        fill: #9ea0a2;
+      }
+
+      .cls-53 {
+        clip-path: url(#clippath-10);
+      }
+
+      .cls-27 {
+        fill: #4e1a16;
+      }
+
+      .cls-54 {
+        mix-blend-mode: multiply;
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-11" points="0 80.37 0 80.37 119.1 80.37 119.1 238.21 0 238.21 0 80.37"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-11" x="33.83" y="85.04" width="37.35" height="144.05"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polygon class="cls-11" points="1255.1 80.37 1255.1 80.37 1136 80.37 1136 238.21 1255.1 238.21 1255.1 80.37"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-11" x="1183.92" y="85.04" width="37.35" height="144.05"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <path class="cls-11" d="M1119.41,776.24v465.78c0,34.86-26.97,63.12-60.24,63.12H196.05c-33.26,0-60.25-28.26-60.25-63.12v-465.78c0,10.51,2.46,20.42,6.8,29.14,10.05,20.19,30.22,33.98,53.45,33.98h863.12c23.24,0,43.4-13.79,53.44-33.98,4.35-8.72,6.8-18.62,6.8-29.14Z"/>
+    </clipPath>
+    <filter id="luminosity-invert" x="132.37" y="203.8" width="1067.23" height="572.44" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="132.37" y="203.8" width="1067.23" height="572.44" maskUnits="userSpaceOnUse">
+      <g class="cls-44">
+        <path class="cls-13" d="M1119.41,312.57v444.6c0-33.27-26.97-60.24-60.25-60.24H196.05c-33.27,0-60.25,26.97-60.25,60.24v-444.6c0-33.28,26.98-60.25,60.25-60.25h863.11c33.28,0,60.25,26.97,60.25,60.25Z"/>
+      </g>
+    </mask>
+    <clipPath id="clippath-5">
+      <rect class="cls-11" x="218.19" y="1169.81" width="823.04" height="58.01"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <rect class="cls-11" x="229.36" y="1177.77" width="811.87" height="43.6"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <rect class="cls-11" x="229.36" y="1103.85" width="811.87" height="43.6"/>
+    </clipPath>
+    <clipPath id="clippath-10">
+      <rect class="cls-11" x="229.36" y="1103.85" width="811.87" height="43.6"/>
+    </clipPath>
+    <clipPath id="clippath-11">
+      <rect class="cls-11" x="229.36" y="1031.07" width="811.87" height="43.6"/>
+    </clipPath>
+    <clipPath id="clippath-12">
+      <rect class="cls-11" x="229.36" y="1031.07" width="811.87" height="43.6"/>
+    </clipPath>
+    <clipPath id="clippath-13">
+      <rect class="cls-11" x="296.3" y="957.63" width="655.38" height="44.27"/>
+    </clipPath>
+    <clipPath id="clippath-14">
+      <rect class="cls-11" x="296.3" y="957.63" width="655.38" height="44.27"/>
+    </clipPath>
+    <clipPath id="clippath-15">
+      <rect class="cls-11" x="170.95" y="751.55" width="143.11" height="57.63"/>
+    </clipPath>
+  </defs>
+  <g class="cls-38">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g>
+          <g id="_Mirror_Repeat_" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+            <g class="cls-46">
+              <g>
+                <rect class="cls-10" x="0" y="119.75" width="67.66" height="67.66" rx="10.5" ry="10.5"/>
+                <rect class="cls-12" x="19.39" y="82.9" width="97.45" height="144.26"/>
+                <rect class="cls-16" x="19.39" y="207.29" width="97.45" height="19.87"/>
+                <rect class="cls-16" x="19.39" y="82.9" width="97.45" height="19.87"/>
+                <rect class="cls-15" x="19.39" y="202.27" width="97.45" height="9.23"/>
+                <rect class="cls-15" x="19.39" y="98.15" width="97.45" height="9.23"/>
+                <g class="cls-54">
+                  <g class="cls-41">
+                    <g>
+                      <g>
+                        <rect class="cls-21" x="33.83" y="97.23" width="33.28" height="5"/>
+                        <rect class="cls-21" x="33.83" y="85.04" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="33.83" y="124.43" width="33.28" height="5"/>
+                        <rect class="cls-21" x="33.83" y="112.23" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="33.83" y="151.62" width="33.28" height="5"/>
+                        <rect class="cls-21" x="33.83" y="139.43" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="33.83" y="178.82" width="33.28" height="5"/>
+                        <rect class="cls-21" x="33.83" y="166.62" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="33.83" y="206.02" width="33.28" height="5"/>
+                        <rect class="cls-21" x="33.83" y="193.82" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="33.83" y="233.21" width="33.28" height="5"/>
+                        <rect class="cls-21" x="33.83" y="221.02" width="33.28" height="5"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <rect class="cls-14" x="69.92" y="80.37" width="49.18" height="150"/>
+              <rect class="cls-8" x="69.92" y="178.2" width="49.18" height="51.8"/>
+              <rect class="cls-8" x="69.92" y="80.37" width="49.18" height="25.9"/>
+              <rect class="cls-23" x="69.92" y="165.13" width="49.18" height="34.94"/>
+              <rect class="cls-19" x="69.92" y="95.35" width="49.18" height="14.84"/>
+            </g>
+          </g>
+          <g id="_Mirror_Repeat_-2" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+            <g class="cls-36">
+              <g>
+                <rect class="cls-10" x="1187.44" y="119.75" width="67.66" height="67.66" rx="10.5" ry="10.5"/>
+                <rect class="cls-12" x="1138.27" y="82.9" width="97.45" height="144.26"/>
+                <rect class="cls-16" x="1138.27" y="207.29" width="97.45" height="19.87"/>
+                <rect class="cls-16" x="1138.27" y="82.9" width="97.45" height="19.87"/>
+                <rect class="cls-15" x="1138.27" y="202.27" width="97.45" height="9.23"/>
+                <rect class="cls-15" x="1138.27" y="98.15" width="97.45" height="9.23"/>
+                <g class="cls-54">
+                  <g class="cls-47">
+                    <g>
+                      <g>
+                        <rect class="cls-21" x="1188" y="97.23" width="33.28" height="5"/>
+                        <rect class="cls-21" x="1188" y="85.04" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="1188" y="124.43" width="33.28" height="5"/>
+                        <rect class="cls-21" x="1188" y="112.23" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="1188" y="151.62" width="33.28" height="5"/>
+                        <rect class="cls-21" x="1188" y="139.43" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="1188" y="178.82" width="33.28" height="5"/>
+                        <rect class="cls-21" x="1188" y="166.62" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="1188" y="206.02" width="33.28" height="5"/>
+                        <rect class="cls-21" x="1188" y="193.82" width="33.28" height="5"/>
+                      </g>
+                      <g>
+                        <rect class="cls-21" x="1188" y="233.21" width="33.28" height="5"/>
+                        <rect class="cls-21" x="1188" y="221.02" width="33.28" height="5"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <rect class="cls-14" x="1136" y="80.37" width="49.18" height="150" transform="translate(2321.19 310.74) rotate(180)"/>
+              <rect class="cls-8" x="1136" y="178.2" width="49.18" height="51.8" transform="translate(2321.19 408.21) rotate(180)"/>
+              <rect class="cls-8" x="1136" y="80.37" width="49.18" height="25.9" transform="translate(2321.19 186.64) rotate(180)"/>
+              <rect class="cls-23" x="1136" y="165.13" width="49.18" height="34.94"/>
+              <rect class="cls-19" x="1136" y="95.35" width="49.18" height="14.84"/>
+            </g>
+          </g>
+        </g>
+        <path class="cls-13" d="M1119.58,758.09v542.88c0,40.62-26.97,73.57-60.25,73.57H196.22c-33.27,0-60.25-32.94-60.25-73.57v-542.88c0,40.64,26.98,73.57,60.25,73.57h863.11c33.28,0,60.25-32.93,60.25-73.57Z"/>
+        <g class="cls-42">
+          <path class="cls-8" d="M1119.41,773.09v468.55c0,35.07-26.97,63.5-60.24,63.5H196.05c-33.26,0-60.25-28.43-60.25-63.5v-468.55c0,10.58,2.46,20.54,6.8,29.31,10.05,20.31,30.22,34.19,53.45,34.19h863.12c23.24,0,43.4-13.87,53.44-34.19,4.35-8.77,6.8-18.74,6.8-29.31Z"/>
+          <rect class="cls-23" x="151.25" y="776.48" width="953.49" height="567.35" rx="52.41" ry="52.41"/>
+          <rect class="cls-14" x="144.83" y="828.89" width="14.91" height="470.29"/>
+          <rect class="cls-14" x="1097.55" y="829.52" width="14.91" height="470.29"/>
+          <rect class="cls-7" x="109.4" y="803.87" width="1032.84" height="99.73"/>
+        </g>
+        <path class="cls-17" d="M1119.41,757.17v77.97c0,4.86-.57,9.58-1.66,14.11H137.46c-1.09-4.53-1.66-9.25-1.66-14.11v-77.97c0-33.27,26.98-60.24,60.25-60.24h863.11c33.28,0,60.25,26.97,60.25,60.24Z"/>
+        <rect class="cls-13" x="135.8" y="18.71" width="983.61" height="449.67"/>
+        <g>
+          <rect class="cls-17" x="136.8" y="181.86" width="983.61" height="299.52"/>
+          <rect class="cls-26" x="146.16" y="54.72" width="961.85" height="162.08"/>
+          <rect class="cls-9" x="180.27" y="75.32" width="894.53" height="141.75"/>
+        </g>
+        <g>
+          <rect class="cls-21" x="160.29" y="61.88" width="934.64" height="6.11"/>
+          <rect class="cls-6" x="145.16" y="110.46" width="961.85" height="116.8"/>
+          <rect class="cls-5" x="145.16" y="203.8" width="961.85" height="23.46"/>
+          <rect class="cls-5" x="145.16" y="109.73" width="961.85" height="23.46"/>
+        </g>
+        <rect class="cls-23" x="93.84" width="78.53" height="242.92" rx="9" ry="9"/>
+        <rect class="cls-23" x="1083.58" width="78.53" height="242.92" rx="9" ry="9"/>
+        <rect class="cls-10" x="204.66" y="998.33" width="850.82" height="270.01" rx="48.08" ry="48.08"/>
+        <rect class="cls-10" x="270.07" y="931.57" width="720" height="228.49" rx="40.39" ry="40.39"/>
+        <path class="cls-24" d="M1119.41,312.57v435.21c0-33.27-26.97-60.25-60.25-60.25H196.05c-33.27,0-60.25,26.98-60.25,60.25v-435.21c0-33.28,26.98-60.25,60.25-60.25h863.11c33.28,0,60.25,26.97,60.25,60.25Z"/>
+        <rect class="cls-3" x="392.53" y="328.84" width="446.22" height="291.56" rx="16.88" ry="16.88"/>
+        <g id="Layer_3" data-name="Layer 3">
+          <g class="cls-49">
+            <g>
+              <rect class="cls-13" x="967.56" y="203.8" width="232.03" height="572.44"/>
+              <rect class="cls-13" x="132.37" y="222.87" width="158.85" height="534.3"/>
+            </g>
+          </g>
+          <rect class="cls-27" x="230.15" y="252.32" width="73.91" height="444.61"/>
+          <rect class="cls-27" x="930.61" y="252.32" width="73.91" height="444.61"/>
+        </g>
+        <path class="cls-24" d="M1119.41,747.78v9.39c0-33.27-26.97-60.24-60.25-60.24H196.05c-33.27,0-60.25,26.97-60.25,60.24v-9.39c0-33.27,26.98-60.25,60.25-60.25h863.11c33.28,0,60.25,26.98,60.25,60.25Z"/>
+        <rect class="cls-35" x="425.85" y="1237.56" width="380" height="66.07"/>
+        <g id="Layer_5" data-name="Layer 5">
+          <g id="_4" data-name="4">
+            <g class="cls-52">
+              <g>
+                <g id="_Grid_Repeat_" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <g>
+                    <rect class="cls-2" x="229.36" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                    <path class="cls-22" d="M262.37,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                  </g>
+                </g>
+                <g id="_Grid_Repeat_-2" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="284.07" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                  <path class="cls-22" d="M316.92,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                </g>
+                <g id="_Grid_Repeat_-3" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="338.77" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                  <path class="cls-22" d="M371.63,1215.49h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                </g>
+                <g id="_Grid_Repeat_-4" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="393.48" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-5" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="448.19" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-6" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="502.89" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-7" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="557.6" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-8" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="612.31" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-9" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="667.01" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-10" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="721.72" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-11" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="776.43" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-12" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="831.13" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-13" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="885.84" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-14" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="940.55" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-15" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="995.25" y="1177.77" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <path class="cls-22" d="M426.33,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M481.04,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M535.75,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M590.45,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M645.16,1215.49h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M699.87,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M754.57,1215.49h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M809.28,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M863.99,1215.49h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M918.69,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M973.4,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+                <path class="cls-22" d="M1028.11,1215.71h-25c-2.76,0-5-2.24-5-5v-10.93h35s0,10.93,0,10.93c0,2.76-2.24,5-5,5Z"/>
+              </g>
+            </g>
+            <g class="cls-48">
+              <g>
+                <g id="_Grid_Repeat_-16" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(297.35 1206.42)"><tspan x="0" y="0">Z</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-17" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(351.24 1206.42)"><tspan x="0" y="0">X</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-18" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(407.23 1206.42)"><tspan x="0" y="0">C</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-19" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(460.93 1206.42)"><tspan x="0" y="0">V</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-20" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(516.48 1206.42)"><tspan x="0" y="0">B</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-21" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(569.14 1206.42)"><tspan x="0" y="0">N</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-22" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(622.83 1206.42)"><tspan x="0" y="0">M</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-23" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(684.97 1196.93)"><tspan x="0" y="0">,</tspan><tspan x="0" y="14">,</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-24" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(739.67 1195.53)"><tspan x="0" y="0">.</tspan><tspan x="0" y="16.8">.</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-25" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(792.62 1195.53)"><tspan x="0" y="0">?</tspan><tspan x=".11" y="16.8">/</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-26" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(844.63 1206.42)"><tspan x="0" y="0">&lt;</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-27" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(899.33 1206.42)"><tspan x="0" y="0">&gt;</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-28" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(956.85 1195.53)"><tspan x="0" y="0">|</tspan><tspan x="0" y="16.8">\</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="_3" data-name="3">
+            <g class="cls-45">
+              <g>
+                <g id="_Grid_Repeat_-29" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="229.36" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-30" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="284.07" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-31" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="338.77" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-32" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="393.48" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-33" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="448.19" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-34" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="502.89" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-35" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="557.6" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-36" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="612.31" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-37" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="667.01" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-38" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="721.72" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-39" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="776.43" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-40" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="831.13" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-41" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="885.84" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-42" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="940.55" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-43" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="995.25" y="1103.85" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+              </g>
+            </g>
+            <g class="cls-53">
+              <g>
+                <g id="_Grid_Repeat_-44" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(241.9 1132.5)"><tspan x="0" y="0">A</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-45" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(296.61 1132.5)"><tspan x="0" y="0">A</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-46" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(352.97 1132.5)"><tspan x="0" y="0">S</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-47" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(406.31 1132.5)"><tspan x="0" y="0">D</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-48" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(463.12 1132.5)"><tspan x="0" y="0">F</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-49" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(514.83 1132.5)"><tspan x="0" y="0">G</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-50" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(569.92 1132.5)"><tspan x="0" y="0">H</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-51" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(627.77 1132.5)"><tspan x="0" y="0">J</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-52" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(679.79 1132.5)"><tspan x="0" y="0">K</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-53" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(737.12 1132.5)"><tspan x="0" y="0">L</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-54" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(794.38 1123.01)"><tspan x="0" y="0">:</tspan><tspan x="0" y="14">;</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-55" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(846.31 1123.01)"><tspan x="0" y="0">@</tspan><tspan x=".38" y="14">¢</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-56" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(891.81 1130.01)"><tspan x="0" y="0">M-R</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-57" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(956.1 1121.61)"><tspan x="0" y="0">~</tspan><tspan x="1.99" y="16.8">`</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-58" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(1011.21 1121.61)"><tspan x="0" y="0">“</tspan><tspan x="1.79" y="16.8">‘</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="_2" data-name="2">
+            <g class="cls-1">
+              <g>
+                <g id="_Grid_Repeat_-59" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="229.36" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-60" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="284.07" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-61" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="338.77" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-62" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="393.48" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-63" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="448.19" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-64" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="502.89" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-65" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="557.6" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-66" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="612.31" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-67" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="667.01" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-68" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="721.72" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-69" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="776.43" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-70" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="831.13" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-71" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="885.84" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-72" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="940.55" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-73" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="995.25" y="1031.07" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+              </g>
+            </g>
+            <g class="cls-43">
+              <g>
+                <g id="_Grid_Repeat_-74" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-33" transform="translate(239.04 1058.65)"><tspan x="0" y="0"></tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-75" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(295.55 1059.73)"><tspan x="0" y="0">Q</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-76" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(347.96 1059.73)"><tspan x="0" y="0">W</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-77" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(408.33 1059.73)"><tspan x="0" y="0">E</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-78" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(461.74 1059.73)"><tspan x="0" y="0">R</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-79" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(517.92 1059.73)"><tspan x="0" y="0">T</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-80" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(570.81 1059.73)"><tspan x="0" y="0">Y</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-81" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(624.88 1059.73)"><tspan x="0" y="0">U</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-82" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(684.13 1059.73)"><tspan x="0" y="0">I</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-83" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(733.2 1059.73)"><tspan x="0" y="0">O</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-84" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-31" transform="translate(790.17 1059.73)"><tspan x="0" y="0">P</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-85" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-30" transform="translate(845.31 1049.21)"><tspan x="0" y="0">¼</tspan><tspan x="0" y="14.4">½</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-86" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-30" transform="translate(894.25 1056.4)"><tspan x="0" y="0">TAB</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-87" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-30" transform="translate(959.08 1049.21)"><tspan x="0" y="0">{</tspan><tspan x=".01" y="14.4">[</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-88" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-30" transform="translate(1013.08 1049.21)"><tspan x="0" y="0">}</tspan><tspan x=".01" y="14.4">]</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="_1" data-name="1">
+            <g class="cls-37">
+              <g>
+                <g id="_Grid_Repeat_-89" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="296.3" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-90" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="352.01" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-91" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="407.71" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-92" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="463.42" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-93" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="519.13" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-94" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="574.83" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-95" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="630.54" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-96" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="686.25" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-97" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="741.95" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-98" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="797.66" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-99" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="853.37" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+                <g id="_Grid_Repeat_-100" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <rect class="cls-2" x="909.07" y="957.63" width="40.71" height="40.71" rx="8" ry="8"/>
+                </g>
+              </g>
+            </g>
+            <g class="cls-51">
+              <g>
+                <g id="_Grid_Repeat_-101" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(313.97 975.39)"><tspan x="0" y="0">!</tspan><tspan x="-2.11" y="16.8">1</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-102" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(367.97 975.39)"><tspan x="0" y="0">“</tspan><tspan x="-.41" y="16.8">2</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-103" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(423.27 975.39)"><tspan x="0" y="0">#</tspan><tspan x="0" y="16.8">3</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-104" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(478.97 975.39)"><tspan x="0" y="0">$</tspan><tspan x="0" y="16.8">4</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-105" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(532.66 975.39)"><tspan x="0" y="0">%</tspan><tspan x="2" y="16.8">5</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-106" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(591.69 975.39)"><tspan x="0" y="0">_</tspan><tspan x="-1.3" y="16.8">6</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-107" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(644.96 975.39)"><tspan x="0" y="0">&amp;</tspan><tspan x="1.13" y="16.8">7</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-108" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(704 975.39)"><tspan x="0" y="0">‘</tspan><tspan x="-2.2" y="16.8">8</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-109" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(759.84 975.39)"><tspan x="0" y="0">(</tspan><tspan x="-2.34" y="16.8">9</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-110" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(815.55 975.39)"><tspan x="0" y="0">)</tspan><tspan x="-2.34" y="16.8">0</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-111" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(870.34 975.79)"><tspan x="0" y="0">*</tspan><tspan x=".64" y="16">-</tspan></text>
+                </g>
+                <g id="_Grid_Repeat_-112" data-name="&amp;lt;Grid Repeat&amp;gt;">
+                  <text class="cls-29" transform="translate(924.63 975.79)"><tspan x="0" y="0">+</tspan><tspan x="0" y="16">=</tspan></text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <path class="cls-8" d="M99.38,181.86h66.15v47.35c0,4.97-4.03,9-9,9h-48.15c-4.97,0-9-4.03-9-9v-47.35h0Z"/>
+        <rect class="cls-14" x="99.38" y="18.71" width="66.15" height="114.48"/>
+        <path class="cls-8" d="M108.38,5.58h48.15c4.97,0,9,4.03,9,9h-66.15c0-4.97,4.03-9,9-9Z"/>
+        <rect class="cls-23" x="428.68" y="1238.32" width="374" height="47.54"/>
+        <circle class="cls-9" cx="1023.21" cy="775.75" r="40.57"/>
+        <text class="cls-28" transform="translate(743.31 767.3)"><tspan class="cls-34"><tspan x="0" y="0">SMITH-CORONA</tspan></tspan><tspan class="cls-50"><tspan x="0" y="40">STERLING</tspan></tspan></text>
+        <rect class="cls-21" x="744.38" y="773.75" width="230.28" height="4.48"/>
+        <circle class="cls-39" cx="1023.21" cy="775.75" r="50.5"/>
+        <path class="cls-8" d="M1089.77,181.43h66.15v47.35c0,4.97-4.03,9-9,9h-48.15c-4.97,0-9-4.03-9-9v-47.35h0Z"/>
+        <rect class="cls-14" x="1089.77" y="18.28" width="66.15" height="114.48"/>
+        <path class="cls-8" d="M1098.77,5.15h48.15c4.97,0,9,4.03,9,9h-66.15c0-4.97,4.03-9,9-9Z"/>
+        <text class="cls-32" transform="translate(998.17 786.66)"><tspan x="0" y="0">S</tspan></text>
+        <g class="cls-40">
+          <g>
+            <polygon class="cls-20" points="201.44 803.87 173.76 803.87 200.2 758.09 227.87 758.09 201.44 803.87"/>
+            <polygon class="cls-4" points="229.12 803.87 201.44 803.87 227.87 758.09 255.55 758.09 229.12 803.87"/>
+            <polygon class="cls-18" points="256.79 803.87 229.12 803.87 255.55 758.09 283.23 758.09 256.79 803.87"/>
+            <polygon class="cls-25" points="284.47 803.87 256.79 803.87 283.23 758.09 310.9 758.09 284.47 803.87"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

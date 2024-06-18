@@ -3,88 +3,201 @@ layout: default
 title: Contact?
 permalink: /contact/
 ---
-<div class="containerScreen">
-    <div class="sceneContact">
-        <div class="sceneContactView_Flaylay">
-            <div class="scnContact-ObjectTypewritter">
-
-            </div>
-            <div class="scnContact-ObjectComissionBoard">
+<div class="sceneContact">
+    <div class="sceneContactView_ComissionBoardGUI" id="guiComissionBoard" style="display: none; z-index: 10;">
+        <div id="menuCBWindowExit" class="menuWindowAction"></div>
+        
+        <div class="sceneContactView_ComissionBoard">
+            <div class="sCType-ObjComissionBoard">
+                <div class="sceneContactView_TextContent">
+                    <form name="contact" method="POST">
+                        <p>
+                            <label>Name: <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                            <label>E-Mail: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <label>Phone Number: <input type="number" name="phone-number" /></label>
+                        </p>
+                        <p>
+                            <label>Soc-Handle: <input type="text" name="social" /></label>
+                        </p>
     
-            </div>
-            <div class="scnContact-ObjMail">
-    
-            </div>
-            <div class="scnContact-ObjMap">
-    
-            </div>
-            <div class="scnContact-ObjCellPhone">
-    
-            </div>
-            <div class="scnContact-PotraitPhoto">
-    
-            </div>
-            <div class="scnContact-InkPen">
-    
-            </div>
-            <div class="scnContact-ObjNameboard" id="contact">
-    
-            </div>
-            <div class="scnContact-ObjNameboard" id="comission">
-    
-            </div>
-
-            <div class="scncontactnContactView_ContactTable">
-
+                        <p>
+                            <label for="service-select">Work: </label>
+                        </p>
+                        <select id="service-select">
+                            <option value="">Work Type</option>
+                            <optgroup label="Art">
+                                <option value="carcicature">Caricature Illustration</option>
+                                <option value="character">Character Illustration</option>
+                                <option value="full-piece">Full-Piece Work</option>
+                                <option value="Commission">Graphic Design</option>
+                            </optgroup>
+                            <optgroup label="Film">
+                                <option value="animation">Animation</option>
+                                <option value="video">Video</option>
+                            </optgroup>
+                        </select>
+                        <p>
+                            <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <object data="/assets/app/otrmrr/res/objCommboards.svg" type="image/svg+xml"></object>
             </div>
         </div>
+    </div>
 
+    <div class="sceneContactView_TypewritterGUI" id="guiTypewritter" style="display: none; z-index: 10;">
+        <div id="menuTWWindowExit" class="menuWindowAction"></div>
+        
         <div class="sceneContactView_Typewritter">
-            <div class="sCType-ObjPaper">
-                <div class="sCType-ObjPc_BrandedSeal"></div>
-                <div class="sCType-ObjPaperContent">
-                    <div class="sCType-ObjPc_ContactGroup">
-                        <form name="contact" method="POST" data-netlify="true">
-                            <p>
-                                <label>Name: <input type="text" name="name" /></label>
-                            </p>
-                            <p>
-                                <label>E-Mail: <input type="email" name="email" /></label>
-                            </p>
-                            <p>
-                                <label>Phone Number: <input type="number" name="phone-number" /></label>
-                            </p>
-                            <p>
-                                <label>Soc-Handle: <input type="text" name="social" /></label>
-                            </p>
-
-                            <p>
-                                <label for="service-select">Inquiry:: </label>
-                            </p>
-                            <select id="service-select">
-                                <option value="">Inquiry Purpose</option>
-                                <option value="Collaboration">Collaboration</option>
-                                <option value="Goodthanks">Goodthanks</option>
-                                <option value="Notice">Notice</option>
-                                <option value="Critique">Critique</option>
-                            </select>
-
-                            <p>
-                                <label>Message: <textarea name="message"></textarea></label>
-                            </p>
-
-                            <button type="submit">Send</button>
-                        </form>
+            <div class="sceneContactView_GroupContent">
+                <div class="sCType-ObjPaper">
+                    <div class="sCType-ObjPc_BrandedSeal"></div>
+                    <div class="sCType-ObjPaperContent">
+                        <div class="sCType-ObjPc_ContactGroup">
+                            <form name="contact" method="POST">
+                                <p>
+                                    <label>Name: <input type="text" name="name" /></label>
+                                </p>
+                                <p>
+                                    <label>E-Mail: <input type="email" name="email" /></label>
+                                </p>
+                                <p>
+                                    <label>Phone Number: <input type="number" name="phone-number" /></label>
+                                </p>
+                                <p>
+                                    <label>Soc-Handle: <input type="text" name="social" /></label>
+                                </p>
+        
+                                <p>
+                                    <label for="service-select">Inquiry:: </label>
+                                </p>
+                                <select id="service-select">
+                                    <option value="">Inquiry Purpose</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="Goodthanks">Goodthanks</option>
+                                    <option value="Notice">Notice</option>
+                                    <option value="Critique">Critique</option>
+                                </select>
+        
+                                <p>
+                                    <label>Message: <textarea name="message"></textarea></label>
+                                </p>
+        
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+                <div class="sCType-ObjTypewritterMain">
+                    <object data="/assets/app/otrmrr/res/objTypewriter.svg" type="image/svg+xml"></object>
+                </div>
             </div>
-            <div class="sCType-ObjTypewritterKeyboard"></div>
-            <div class="sCType-ObjTypewritterMain"></div>
-
+    
             <div class="scType-MailContainer">
                 <div class="scType-Letter"></div>
                 <div class="scType-Mail"></div>
             </div>
         </div>
     </div>
+
+    <div class="sceneContactView_Flatlay">
+        <div onclick="createGUITypewritter()" class="scnContact-ObjectTypewritter" id="objTypewritter" style="z-index: 5;">
+            <!--<img src="/assets/app/otrmrr/res/objTypewriter.svg" alt=""> -->
+            <object style="pointer-events: none;" data="/assets/app/otrmrr/res/objTypewriter.svg" type="image/svg+xml"></object>
+        </div>
+        <div onclick="createGUIComissionboard()" id="objComissionBoard" style="z-index: 5;" class="scnContact-ObjectComissionBoard">
+            <object style="pointer-events: none;" data="/assets/app/otrmrr/res/objCommboards.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="scnContact-ObjMail" id="one">
+            <object data="/assets/app/otrmrr/res/objMail.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="scnContact-ObjMail" id="two">
+            <object data="/assets/app/otrmrr/res/objMail.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="scnContact-ObjMail" id="three">
+            <object data="/assets/app/otrmrr/res/objMail.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="scnContact-ObjMap">
+
+        </div>
+        <div class="scnContact-ObjCellPhone">
+
+        </div>
+        <div class="scnContact-PotraitPhoto">
+            <img src="/assets/app/otrmrr/res/objPhotoPortrait.png" width="100%" height="100%"></img>
+        </div>
+        <div class="scnContact-InkBottle">
+            <object data="/assets/app/otrmrr/res/objInkBottle.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="scnContact-InkPen">
+
+        </div>
+        <div class="scnContact-ObjNameboard" id="contact">
+
+        </div>
+        <div class="scnContact-ObjNameboard" id="comission">
+
+        </div>
+
+        <div class="scnContactView_ContactTable">
+            <object data="/assets/app/otrmrr/res/bgTableFlatlay.svg" type="image/svg+xml"></object>
+        </div>
+    </div>
 </div>
+
+<script>
+    const domOBJComissionboard = document.getElementById('objComissionBoard')
+    const domGUIComisisonboard = document.getElementById('guiComissionBoard')
+
+    const domOBJTypewritter = document.getElementById('objTypewritter')
+    const domGUIContact = document.getElementById('guiTypewritter')
+    const eleCBMenuExit = document.getElementById('menuCBWindowExit')
+    const eleTWMenuExit = document.getElementById('menuTWWindowExit')
+
+    function createGUIComissionboard() {
+        console.log("ComissionBoard has been clicked.")
+
+        if (domGUIComisisonboard.style.display === 'none') {
+            console.log("Setting visibility.")
+            gsap.fromTo(".sceneContactView_ComissionBoardGUI", {backgroundColor: '#00000000'}, {backgroundColor: '#00000080', duration: 0.5, display: 'block'})
+            gsap.fromTo(".sceneContactView_ComissionBoard", {y: 500}, {y:0, rotate:'360deg',  duration: 2})
+            gsap.to(eleCBMenuExit, {opacity:1})
+        }
+
+        eleCBMenuExit.addEventListener('click', () => {
+            if (domGUIComisisonboard.style.display === "block") {
+                gsap.fromTo('.sceneContactView_ComissionBoardGUI', {backgroundColor: '#00000080'}, {backgroundColor: '#00000000', duration: 0.5})
+                gsap.fromTo(".sceneContactView_ComissionBoard", {y: 0}, {y:1000, duration: 2, rotate:'0deg', ease:'expo.inOut'})
+                gsap.to('.sceneContactView_ComissionBoardGUI', {duration: 1.5, display: "none"})
+                gsap.to(eleCBMenuExit, {opacity:0})
+            }
+        });
+    }
+
+    function createGUITypewritter() {
+        console.log("Typewritter has been clicked.")
+
+        if (domGUIContact.style.display === 'none') {
+            console.log("Setting visibility.")
+            gsap.fromTo(".sceneContactView_TypewritterGUI", {backgroundColor: '#00000000'}, {backgroundColor: '#00000080', duration: 0.5, display: 'block'})
+            gsap.fromTo(".sceneContactView_Typewritter", {y: 900}, {y:0, duration: 2.5, ease:"elastic"})
+            gsap.to(eleTWMenuExit, {opacity:1})
+        }
+
+        eleTWMenuExit.addEventListener('click', () => {
+            if (domGUIContact.style.display === "block") {
+                gsap.fromTo('.sceneContactView_TypewritterGUI', {backgroundColor: '#00000080'}, {backgroundColor: '#00000000', duration: 0.5})
+                gsap.fromTo(".sceneContactView_Typewritter", {y: 0}, {y:1000, duration: 2, ease:'expo.inOut'})
+                gsap.to('.sceneContactView_TypewritterGUI', {duration: 1.5, display: "none"})
+                gsap.to(eleTWMenuExit, {opacity:0})
+            }
+        });
+    }
+
+</script>
