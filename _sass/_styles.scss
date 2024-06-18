@@ -584,29 +584,38 @@ a.uki-ftr-atr-link {
 }
 
 #oz.uiOTRMRR_txtContent {
-	position: absolute;
-	height: auto;
-	width: max-content;
-	right: 0;
-	z-index: 5;
-	bottom: 100px;
-	display: flex;
-	flex-direction: row-reverse;
+    position: absolute;
+    height: auto;
+    width: max-content;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    bottom: 0px;
+	text-wrap: balance;
+	text-shadow: 0 0 5px #000;
 }
 
 #oz.uiOTRMRR_txtContent-Title {
-	//width: 100%;
-	//height: max-content;
-	transform: rotate(270deg);
-	position: absolute;
-	//right: 70px;
-	//bottom: -70px;
-	bottom: 40px;
+    position: relative;
+	top: 40px;
+    width: max-content;
+    align-self: end;
 }
 
 #oz.uiOTRMRR_txtContent-Title > img {
 	width: 300px;
 	height: auto;
+}
+
+#oz.uiOTRMRR_txtContent-Desc {
+    height: auto;
+    color: #fff8e7;
+    line-height: 1.3;
+    letter-spacing: 1.3px;
+    width: 500px;
+    text-align: end;
 }
 
 
@@ -615,41 +624,49 @@ a.uki-ftr-atr-link {
 	width: 500px;
 }
 
-#oz.uiOTRMRR_txtContent-Desc {
-	writing-mode: sideways-lr;
-	width: max-content;
-	height: 350px;
-	color: gold;
-	text-shadow: 2px -2px 1px brown;
-	line-height: 1.3;
-	letter-spacing: 1.3px;
-}
 
 #otto.uiOTRMRR_txtContent-Desc {
-	text-orientation: mixed;
-	writing-mode: sideways-rl;
-	width: auto;
-	height: 330px;
-	line-height: 1.25;
+    width: 600px;
+    height: auto;
+    line-height: 1.25;
+}
+
+#otto.uiOTRMRR_txtContent-Desc > p::first-letter {
+	font-family: "Anglican Text";
+    font-size: 4.5rem;
+    float: left;
+    padding-right: 10px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: -12px;
+}
+
+#oz.uiOTRMRR_txtContent-Desc > p::first-letter {
+	font-family: "Anglican Text";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: -23px;
+    float: left;
+    margin-left: 80px;
 }
 
 
 #otto.uiOTRMRR_txtContent {
-	position: absolute;
-	height: auto;
-	width: max-content;
-	left: 5px;
-	z-index: 5;
-	top: 5px;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	text-shadow: 0 0 5px black;
+    height: auto;
+    width: max-content;
+    color: #fff8e7;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0 0 5px #000;
+    align-items: center;
+    margin: 10px;
+	text-wrap: balance;
 }
 
 #otto.uiOTRMRR_txtContent-Title {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: max-content;
 }
 
 #otto.uiOTRMRR_txtContent-Title > img {
@@ -658,21 +675,36 @@ a.uki-ftr-atr-link {
 }
 
 #blurb.uiOTRMRR_txtContent-Desc {
-	color: #e5f6f5;
+	color: gold;
+    text-shadow: 2px 2px 1px brown;
 	font-style: italic;
 	font-family: "Futura Now Script";
 	font-weight: bold;
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	position: absolute;
 	height: max-content;
 	text-align: center;
 	width: 400px;
 	text-wrap: balance;
 	text-justify: distribute;
+}
+
+
+#title.uiOTRMRR_txtContent {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: fit-content;
+}
+
+#title.uiOTRMRR_txtContent-Title > h1 {
+	font-family: "Creative Block Negative";
+	color: #bedbff;
 }
 
 .uiOTRMRR_charSpriteActor > img {
@@ -952,4 +984,61 @@ a.uki-ftr-atr-link {
     rotate: 0deg;
     left: 360px;
     top: 540px;
+}
+
+.textSplashWIP {
+    position: absolute;
+    max-width: max-content;
+    right: 0;
+    bottom: -7px;
+	z-index: 1;
+}
+
+span#textSplash::before {
+    font-weight: bold;
+    content: "W.I.P";
+    font-size: 15px;
+    font-family: "Futura Now Script";
+    color: #daa520;
+    position: relative;
+    rotate: 340deg;
+    display: block;
+}
+
+.decoEternal {
+	position: absolute;
+	margin: auto;
+	z-index: 20;
+}
+
+#topEternalHeader.decoEternal {
+	top: 10px;
+	left: 0;
+	right: 0;
+	width: 300px;
+}
+
+#bottomEternalHeader.decoEternal {
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	width: 300px;
+	rotate: 180deg;
+}
+
+#leftEternalSeparator.decoEternal {
+	top: 0;
+	left: 0;
+	bottom: 0;
+    height: max-content;
+    width: 50px;
+}
+
+#rightEternalSeparator.decoEternal {
+	top: 0;
+	bottom: 0;
+	right: 0;
+    height: max-content;
+    width: 50px;
+	rotate: 180deg;
 }
