@@ -700,12 +700,24 @@ a.uki-ftr-atr-link {
     right: 0;
     bottom: 0;
     height: fit-content;
+	z-index: 10;
+}
+
+#title.uiOTRMRR_txtContent-Title {
+	background: linear-gradient(180deg, rgba(255, 255, 255) 0%, rgb(255 255 255) 45%, rgb(244, 244, 244) 45%, rgb(86 52 239) 1%, rgb(203 203 249) 60%);
+    color: #00000000;
+    background-clip: text;
+    mix-blend-mode: overlay;
+	filter: drop-shadow(0 0 3px #7155ff);	
 }
 
 #title.uiOTRMRR_txtContent-Title > h1 {
 	font-family: "Creative Block Negative";
-	color: #bedbff;
+	//color: rgb(205, 205, 255);
 }
+
+.gradientCleanSlate {
+	}
 
 .uiOTRMRR_charSpriteActor > img {
 	height: auto;
@@ -728,6 +740,7 @@ a.uki-ftr-atr-link {
 
 .uiOTRMRR_charSpriteScene {
 	pointer-events: none;
+	height: 100%;
 }
 
 .sceneWorksView_Shelf {
@@ -873,7 +886,7 @@ a.uki-ftr-atr-link {
     height: 400px;
     position: absolute;
     margin: auto;
-    top: 6px;
+    top: -9px;
     left: 0;
     right: 0;
     z-index: 5;
@@ -1041,4 +1054,42 @@ span#textSplash::before {
     height: max-content;
     width: 50px;
 	rotate: 180deg;
+}
+
+.vfxLayerGlow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#FG.vfxLayerGlow {
+	top: 300px !important;
+	mix-blend-mode: hard-light;
+	background-image: linear-gradient(0deg, #1879ff, transparent);
+	z-index: 2;
+}
+
+#BG.vfxLayerGlow {
+	mix-blend-mode: hard-light;
+	background-image: linear-gradient(0deg, #010e3a, transparent);
+	z-index: -1;
+}
+
+a:visited > span.jittery {
+	color: #18ecff;
+	filter: drop-shadow(2px 2px 0px #47008e);
+}
+
+#textAspira {
+	position: absolute;
+	font-family: 'Bravecho';
+	font-size: 4em;
+	color: goldenrod;
+}
+
+.letter {
+	opacity: 0;
+	//transform-origin: 0 100%;
+	//display: inline-block;
+	/*line-height: 1em;*/
 }

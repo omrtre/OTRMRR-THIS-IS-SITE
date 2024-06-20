@@ -36,7 +36,7 @@ permalink: /profile/
 
         <div class="uiOTRMRR_txtContent" id="title">
             <div id="title" class="uiOTRMRR_txtContent-Title"><h1>01.PrOfIlE</h1></div>
-            <div class="uiOTRMRR_txtContent-Desc" id="blurb"><p>A enigmatic stylish duo, its' host and manager work on the Omnibus:: <span class="jittery" style="font-family: Creative Block Negative;">OTURTWORKS</span>, in their effort to perserve space-time and fend off fourth-dimensional beings through the power of fiction and the weapon of storytelling.</p></div>    
+            <div class="uiOTRMRR_txtContent-Desc" id="blurb"><p>A enigmatic stylish duo, its' host and manager work on the Omnibus:: <a href="https://oturtworks.tv"><span class="jittery" style="font-family: Creative Block Negative;">OTURTWORKS</span></a>, in their effort to perserve space-time and fend off fourth-dimensional beings through the power of fiction and the weapon of storytelling.</p></div>    
         </div>
     </div>
     <div class="uiOTRMRR_charSpriteScene" id="ifxParallax">
@@ -46,9 +46,18 @@ permalink: /profile/
         <div data-depth="0.6" class="uiOTRMRR_charSpriteActor" id="otto">
             <img src="/assets/app/otrmrr/sprite/ottoStand.svg">
         </div>
+        <div id="FG" class="vfxLayerGlow"></div>
+        <div id="BG" class="vfxLayerGlow"></div>
     </div>
     <div class="uiOTRMRR_bgVisualizer" id="bgFutureHaze">
         <div id="_bgDim"></div>
+        <div id="_bgQuotes">
+            {% for x in site.data.quotesAspirational.words %}
+                <div  id="textAspira">
+                    <span class="letters">{{ x }}</span>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 
@@ -104,7 +113,34 @@ permalink: /profile/
 <script type="module" src="/assets/app/otrmrr/js/bgFutureHaze.js"></script>
 
 <script>
-    var domScene = document.getElementById('ifxParallax');
-    var parallaxInstance = new Parallax(domScene);
+    const domScene = document.getElementById('ifxParallax');
+    const parallaxInstance = new Parallax(domScene);
+    const domAspira = document.querySelectorAll('#textAspira')
+
+    const animLetters = document.querySelectorAll('.letters')
+    animLetters.forEach(groupLetter => {
+        groupLetter.innerHTML = groupLetter.textContent.replace(/\S/g, '<span class="letter">$&</span>')
+    }) 
+    
+    domAspira.forEach(aspira => {
+        aspira.style.right = Math.random() * 250 + 950 + 'px';
+        aspira.style.left = Math.random() * 800 + 50 + 'px';
+        aspira.style.top = Math.random() * 650 + 50 + 'px';
+        aspira.style.bottom = Math.random() * 350 + 950 + 'px';
+        var tl = anime.timeline({loop: true, direction: 'alternate', duration: 1000});
+
+
+        tl.add({
+            targets: '.letter',
+            keyframes: [
+                {opacity: '0.1'},
+                {opacity: '0.9'},
+                {opacity: '0.0'},
+            ],
+            easing: 'easeInOutSine',
+            delay: anime.stagger(150)
+        });
+    })
+
 
 </script>
