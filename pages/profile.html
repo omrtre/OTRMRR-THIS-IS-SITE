@@ -24,14 +24,14 @@ permalink: /profile/
             <div id="oz" class="uiOTRMRR_txtContent-Title">
                 <img src="/assets/app/otrmrr/title/oz-the-operator-title.png">
             </div>
-            <div class="uiOTRMRR_txtContent-Desc" id="oz"><p>Director of Operations. The illustrious host in charge of the Omnibus broadcasting feed.</p></div>
+            <div class="uiOTRMRR_txtContent-Desc" id="oz"></div>
         </div>
 
         <div class="uiOTRMRR_txtContent" id="otto">
             <div id="otto" class="uiOTRMRR_txtContent-Title">
                 <img src="/assets/app/otrmrr/title/title_oz-cc.svg">
             </div>
-            <div class="uiOTRMRR_txtContent-Desc" id="otto"><p>Manager of Operations. A ladybug responsible for legal work and business. Dedicated to the craft of taking an idea and pushing it to its' breaking point.</p></div>
+            <div class="uiOTRMRR_txtContent-Desc" id="otto"></div>
         </div>
 
         <div class="uiOTRMRR_txtContent" id="title">
@@ -41,10 +41,24 @@ permalink: /profile/
     </div>
     <div class="uiOTRMRR_charSpriteScene" id="ifxParallax">
         <div data-depth="0.4" class="uiOTRMRR_charSpriteActor" id="oz">
-            <img src="/assets/app/otrmrr/sprite/ozBehold.svg">
+            <img class="objSprite" id="oz" src="/assets/app/otrmrr/sprite/ozBehold.svg">
+            <div class="objSpeechBubble" id="oz">
+                <div class="objSpeechBubbleNametag" id="oz">
+                    <p>{{ site.data.actorDialogue.oz.name }}</p>
+                </div>
+                <div class="objSpeechBubbleText" id="oz">
+                </div>
+            </div>
         </div>
         <div data-depth="0.6" class="uiOTRMRR_charSpriteActor" id="otto">
-            <img src="/assets/app/otrmrr/sprite/ottoStand.svg">
+            <img class="objSprite" id="otto" src="/assets/app/otrmrr/sprite/ottoStand.svg">
+            <div class="objSpeechBubble" id="otto">
+                <div class="objSpeechBubbleNametag" id="otto">
+                    <p>{{ site.data.actorDialogue.otto.name }}</p>
+                </div>
+                <div class="objSpeechBubbleText" id="otto">
+                </div>
+            </div>
         </div>
         <div id="FG" class="vfxLayerGlow"></div>
         <div id="BG" class="vfxLayerGlow"></div>
@@ -142,5 +156,45 @@ permalink: /profile/
         });
     })
 
+    window.addEventListener('load', (event) => {
+        var animEnterActorTL = gsap.timeline({delay:.5, duration:3});
+        animEnterActorTL.fromTo("#oz.objSprite", {x:380, y:900}, {x:0, y:0, duration:1, ease: 'expo.out'})
+        animEnterActorTL.fromTo("#otto.objSprite", {y:900}, {y:0,duration:2, ease: 'elastic.out(1,0.5)'})
+        //animEnterActorTL.to(animText, {opacity:1})
+        animEnterActorTL.fromTo("#oz.objSpeechBubble", {opacity: 0, rotate:'-180deg'}, {duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
+        animEnterActorTL.fromTo("#oz.objSpeechBubbleText", {visibility: false}, {visibility: true})
+        animEnterActorTL.fromTo("#otto.objSpeechBubble", {opacity: 0, rotate:'180deg'}, {duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
+        animEnterActorTL.fromTo("#otto.objSpeechBubbleText", {visibility: false}, {visibility: true})
+    })
+
+    animOttoDescText = new TypeIt("#otto.uiOTRMRR_txtContent-Desc", {
+        speed: 20,
+        strings: "<p>Otto von Bruno. <em>Manager of Operations</em>. The ladybug responsible for legal work and business. Inquire him for information about collaborations, freelance work, and fair use.</p>",
+        cursor: false,
+    }).go();
+
+    animOzDescText = new TypeIt("#oz.uiOTRMRR_txtContent-Desc", {
+        speed: 20,
+        strings: "<p>Oz. <em>Director of Operations</em>. The illustrious host in charge of the Omnibus broadcasting feed. </p>",
+        cursor: false,
+    }).go();
+
+    animOzActorText = new TypeIt("#oz.objSpeechBubbleText", {
+        speed: 50,
+        strings: "{{ site.data.actorDialogue.oz.dialogue.intro }}",
+        cursor: false,
+        startDelay: 10000,
+        lifelike: true,
+        waitUntilVisible: true
+    }).go();
+
+    animOzActorText = new TypeIt("#otto.objSpeechBubbleText", {
+        speed: 50,
+        strings: "{{ site.data.actorDialogue.otto.dialogue.intro }}",
+        cursor: false,
+        startDelay: 20000,
+        lifelike: true,
+        waitUntilVisible: true
+    }).go();
 
 </script>

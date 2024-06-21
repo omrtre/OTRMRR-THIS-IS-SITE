@@ -1,0 +1,10 @@
+otto:
+  name: Otto
+  dialogue:
+    intro:
+      - "You bet we'll be pushing an idea to its' absolute breaking point."
+oz:
+  name: Oz
+  dialogue:
+    intro:
+      - "My heart is dedicated to my creations! I will see to it my ambitions are a reality."
