@@ -47,6 +47,7 @@ permalink: /profile/
                     <p>{{ site.data.actorDialogue.oz.name }}</p>
                 </div>
                 <div class="objSpeechBubbleText" id="oz">
+                    {{ site.data.actorDialogue.oz.dialogue.intro }}
                 </div>
             </div>
         </div>
@@ -125,6 +126,7 @@ permalink: /profile/
 </script>
 
 <script type="module" src="/assets/app/otrmrr/js/bgFutureHaze.js"></script>
+<script src="/assets/app/otrmrr/js/animalese.js"></script>
 
 <script>
     const domScene = document.getElementById('ifxParallax');
@@ -181,7 +183,6 @@ permalink: /profile/
 
     animOzActorText = new TypeIt("#oz.objSpeechBubbleText", {
         speed: 50,
-        strings: "{{ site.data.actorDialogue.oz.dialogue.intro }}",
         cursor: false,
         startDelay: 10000,
         lifelike: true,
@@ -196,5 +197,7 @@ permalink: /profile/
         lifelike: true,
         waitUntilVisible: true
     }).go();
+    
+
 
 </script>
