@@ -158,16 +158,16 @@ permalink: /profile/
         });
     })
 
-    window.addEventListener('load', (event) => {
+    //window.addEventListener('load', (event) => {
         var animEnterActorTL = gsap.timeline({delay:.5, duration:3});
         animEnterActorTL.fromTo("#oz.objSprite", {x:380, y:900}, {x:0, y:0, duration:1, ease: 'expo.out'})
         animEnterActorTL.fromTo("#otto.objSprite", {y:900}, {y:0,duration:2, ease: 'elastic.out(1,0.5)'})
         //animEnterActorTL.to(animText, {opacity:1})
         animEnterActorTL.fromTo("#oz.objSpeechBubble", {opacity: 0, rotate:'-180deg'}, {duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
         animEnterActorTL.fromTo("#oz.objSpeechBubbleText", {visibility: false}, {visibility: true})
-        animEnterActorTL.fromTo("#otto.objSpeechBubble", {opacity: 0, rotate:'180deg'}, {duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
+        animEnterActorTL.fromTo("#otto.objSpeechBubble", {opacity: 0, rotate:'180deg'}, {delay:8, duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
         animEnterActorTL.fromTo("#otto.objSpeechBubbleText", {visibility: false}, {visibility: true})
-    })
+    //})
 
     animOttoDescText = new TypeIt("#otto.uiOTRMRR_txtContent-Desc", {
         speed: 20,
