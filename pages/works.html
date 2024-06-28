@@ -13,8 +13,8 @@ permalink: /works/
             <div class="scnWorks_ObjBookcaseRow" id="opera">
                 <div class="scnWorks-ObjOmniopus" id="opera">
                     {% for o in site.data.works.collections %}
-                        <div class="objOmnibusCase" id="{{o.name}}">
-                            <object data="/assets/app/otrmrr/res/omnibus-EGO.svg" type="image/svg+xml"></object>
+                        <div class="objOmnibusCase" id="{{o.code}}" data-omnitome-val="{{o.id}}">
+                            <object style="pointer-events: none;" data="/assets/app/otrmrr/res/omnibus-{{o.code}}.svg" type="image/svg+xml"></object>
                         </div>
                     {% endfor %}
                 </div>
@@ -29,18 +29,217 @@ permalink: /works/
             </div>
         </div>
     </div>
+    <div class="sceneOmnitome" style="display: none;">
+        {% for tome in site.data.omniTome %}
+            <div class="containerOmnitome" style="display: none;" id={{tome.codename}}>
+                <div class="containerContentOmnitome">
+                    <div class="coverOmnitome" id={{tome.codename}}>
+                        <object data="/assets/app/otrmrr/res/objOmnitome-{{tome.codename}}.svg" type="image/svg+xml"></object>
+                    </div>
+                    {% for page in tome.content %}
+                        {% for item in page %}
+                        <div class="pageOmnitome" id="{{ item[0] }}">
+                            <div class="contentOmnitome" id="{{ item[0] }}">
+                                <h1>{{item[0]}}</h1>
+                                {% case item[0] %}
+                                    {% when 'synopsis' %}
+                                        <p>{{item[1] | newline_to_br }}</p>
+
+                                    {% when 'casting' %}
+                                        <div style="width: 600px; max-height: 650px; font-size: .8em; overflow-y: scroll;">
+                                            <!-- Actors -->
+                                            <div>
+                                                <h2>Actors</h2>
+                                                <!-- Major Characters -->
+                                                <div>                                                                            <!-- Major Characters -->
+                                                    <h3>Major Characters</h3>
+                                                    <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                                                        {% for actor in item[1].actors.major %}
+                                                        <div class="actorGroup" style="margin-right: 30px;" id="major">
+                                                            <img src="/image/image.png">
+                                                            <p><em>{{actor.char}}</em></p>
+                                                            <p>{{actor.actor}}</p>
+                                                        </div>
+                                                    {% endfor %}  
+                                                    </div>                        
+                                                </div>
+                                                <!-- Minor Characters -->
+                                                <div>
+                                                    <h3>Minor Characters</h3>
+                                                    <div>
+                                                        {% for actor in item[1].actors.minor %}
+                                                        <div class="actorGroup" style="margin-right: 30px;" id="minor">
+                                                            <img src="/image/image.png">
+                                                            <p><em>{{actor.char}}</em></p>
+                                                            <p>{{actor.actor}}</p>
+                                                        </div>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Collaborators -->
+                                            <div>
+                                                <!-- Collaborators -->
+                                                <h2>Collaborators</h2>
+
+                                                <div>
+                                                    <!-- Illustrator -->
+                                                    <h3>Illustrator</h3>
+                                                    <div>
+                                                        {% for artist in item[1].collaborators.illustrators %}
+                                                            <div class="illustratorGroup" id="illustrator">
+                                                                <img src="/image/image.png">
+                                                                <p><em>{{artist}}</em></p>
+                                                            </div>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <!-- Composers -->
+                                                    <h3>Composer</h3>
+                                                    {% for artist in item[1].collaborators.composers %}
+                                                        <div class="composterGroup" id="composer">
+                                                            <img src="/image/image.png">
+                                                            <p><em>{{artist}}</em></p>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+
+                                                <div>
+                                                    <!-- Programmer -->
+                                                    <h3>Programmer</h3>
+                                                    {% for artist in item[1].collaborators.programmers %}
+                                                    <div class="programmerGroup" id="programmer">
+                                                        <img src="/image/image.png">
+                                                        <p><em>{{artist}}</em></p>
+                                                    </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% when 'blog' %}
+                                        {% assign colDevPosts = site.omnitome | where_exp: "page", "page.type == 'dev'" %}
+                                        {% for colPost in colDevPosts %}
+                                            <div>
+                                                <h2>{{colPost.title}}</h2><p>{{colPost.author}}</p>
+                                                <p>{{colPost.excerpt}}</p>
+                                                <p>{{colPost.date}}</p>
+                                                <p>{{colPost.type}}</p>
+                                            </div>
+                                        {% endfor %}                                                                                                                          
+                                    {% when 'impact' %}
+                                        {% assign colImpactPosts = site.omnitome | where_exp: "page", "page.type == 'impact'" %}
+                                        {% for colPost in colImpactPosts %}
+                                            <div>
+                                                <h2>{{colPost.title}}</h2><p>{{colPost.author}}</p>
+                                                <p>{{colPost.excerpt}}</p>
+                                                <p>{{colPost.date}}</p>
+                                                <p>{{colPost.type}}</p>
+                                            </div>
+                                        {% endfor %}   
+                                    {% when 'research' %}
+                                        <table>
+                                            <tbody>
+                                                {% for cite in item[1] %}
+                                                <tr>
+                                                    <th style="width: 50%;">{{cite.concept}}</th><td>{{cite.citation}}</td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    {% when 'scrapbook' %}
+                                        <div id="scrapbookViewer" style= "width: 600px; height: 620px;">
+
+                                        </div>
+                                    {% when 'music' %}
+                                        <div class="visualizerVinylPlayer">
+                                            <img class="visualVinylGraphic" src="/assets/app/otrmrr/res/vinyl-ebony.png" width=100% height=100%;>
+                                            <div class="visualizerModuleController">
+                                                <div class="vizButton" id="name"></div>
+                                                <div class="vizButton" id="stop"></div>
+                                                <div class="vizButton" id="prev"></div>
+                                                <div class="vizButton" id="play"></div>
+                                                <div class="vizButton" id="next"></div>
+                                            </div>
+                                        </div>
+
+                                    {% when 'cinema' %}
+                                        <div style="display: flex; flex-direction: column;">
+                                            <div class="visualizerPortableCDScreen"></div>
+                                            <div class="visualizerPortableCDControl">
+                                                <div class="visualizerPortableCD"><img src="/assets/app/otrmrr/res/cd-blank.png" width="100%" height="100%"></div>
+                                            </div>  
+                                        </div>
+
+                                    {% when 'multimedia' %}
+
+                                    {% when 'expansions' %}
+
+                                    {% endcase %}
+                            </div>            
+                        </div>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 <script>
     const domOmnibus = document.querySelectorAll('.objOmnibusCase')
+    const domOmnitomeContainer = document.querySelectorAll('.containerOmnitome')
+    const valOmnitome = document.querySelectorAll('[data-omnitome-val]')
+    const domVisualizerPlayer = document.querySelector('.visualVinylGraphic')
+    const domPlayerPlayButton = document.querySelector('#play.vizButton')
+    const domPlayerStopButton = document.querySelector('#stop.vizButton')
+    let animeVinylTween = gsap.to('.visualVinylGraphic', {rotate: '360deg', ease: 'none', duration: 4, repeat:-1, paused: true})
+
+    domPlayerPlayButton.addEventListener("click", () => {
+        animeVinylTween.play();
+    })
+
+    domPlayerStopButton.addEventListener("click", () => {
+        animeVinylTween.pause();
+    })
 
     domOmnibus.forEach(omnibus => {
         omnibus.addEventListener("mouseover", ()=> {
-            gsap.to(omnibus, {scale:1.4, zIndex: 5, ease:'expo.inOut'})
+            gsap.to(omnibus, {scale:1.4, zIndex: 20, ease:'expo.inOut'})
         });
 
+        omnibus.addEventListener("click", () => {
+            const targetOmnibusContainer = document.querySelector('#' + omnibus.id + '.containerOmnitome')
+            document.querySelector(".sceneOmnitome").style.display = 'block'
+            targetOmnibusContainer.style.display = 'flex';
+
+        })
+
         omnibus.addEventListener("mouseout", ()=> {
-            gsap.to(omnibus, {scale:1,  zIndex: 1, ease:'expo.outIn'})
+            gsap.to(omnibus, {scale:1,  zIndex: 20, ease:'expo.outIn'})
         });
     });
+
+    var viewer = OpenSeadragon({
+        id: "scrapbookViewer",
+        prefixUrl: "/assets/global/js/images/",
+        sequenceMode: true,    
+        showReferenceStrip: true,
+        referenceStripScroll: 'vertical',
+        tileSources: [
+            {
+                type: 'image',
+                url: "/assets/app/otrmrr/artwork/groundwork/ego/zlc45koc.bmp"
+            }, 
+            {
+                type: 'image',
+                url: "/assets/app/otrmrr/artwork/groundwork/ego/46drewdi.bmp"
+            }
+        ]
+    });
+
+    
+
 </script>

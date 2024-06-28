@@ -1,0 +1,49 @@
+<div class="containerOmnitome" id={{tome.codename}}>
+    <div class="coverOmnitome" id={{tome.codename}}>
+        <object data="/assets/app/otrmrr/res/objOmnitome-{{tome.codename}}.svg" type="image/svg+xml"></object>
+    </div>
+    {% for page in site.data.omniTome.{{tome.codename}}.content %}
+        <div class="pageOmnitome"id="{{tome.codename}}">
+            {% case  site.data.omniTome.{{tome.code}}.content %}
+                {% when 'logline' %}
+                    <div class="contentOmnitome" id="logline">
+
+                    </div>            
+            
+                {% when 'synopsis' %}
+                    <div class="contentOmnitome" id="synopsis"></div>
+
+                {% when casting %}
+                    <div class="contentOmnitome" id="casting"></div>            
+
+
+                {% when blog %}
+                    <div class="contentOmnitome" id="blog"></div>            
+
+
+                {% when impact %}
+                    <div class="contentOmnitome" id="impact"></div>            
+
+
+                {% when research %}
+                    <div class="contentOmnitome" id="research"></div>            
+
+
+                {% when scrapbook %}
+                    <div class="contentOmnitome" id="scrapbook"></div>            
+
+
+                {% when music %}
+                    <div class="contentOmnitome" id="music"></div>            
+
+
+                {% when cinema %}
+                    <div class="contentOmnitome" id="cinema"></div>            
+
+
+                {% when expansions %}
+                    <div class="contentOmnitome" id="expansions"></div>            
+            {% endcase %}
+        </div>
+    {% endfor %}
+</div>

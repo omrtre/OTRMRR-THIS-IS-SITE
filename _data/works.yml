@@ -1,10 +1,16 @@
 collections:
-  - name: EGO
+  - name: EGOMANIA
+    code: EGO
+    id: 1
     author: OTURTMURR
     release: ORIGINALE CHRONICLE
-  - name: YMA
+  - name: Young Man's Academia
+    code: YMA
+    id: 2
     author: OTURTMURR
     release: ORIGINALE CHRONICLE
-  - name: RDK
+  - name: The Marvelous Story of Rush Demetris Kylligan
+    code: RDK
+    id: 3
     author: OTURTMURR
     release: ORIGINALE CHRONICLE

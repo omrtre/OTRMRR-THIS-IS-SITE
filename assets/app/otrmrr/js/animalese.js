@@ -16,28 +16,38 @@ var playbackSpeedMax = 3.0;
 var playbackSpeed = null;
 var sentence = '';
 
-function onSpeakButtonClick() {
+function onCharSpeak() {
     playbackSpeed = Math.random() * (playbackSpeedMax-playbackSpeedMin) + playbackSpeedMin;
     sentence = buildSentence(sentence);
     speakSentence();
 }
 
 function speakSentence() {
-    speakNextCharacter();
+    if (sentence.length > 0) {
+        speakNextCharacter();
+    }
 }
 
 function speakNextCharacter() {
     if (sentence.length == 0) return;
 
     var character = sentence[0];
-    sentence = sentence.substring(1, sentence.length);
+    sentence = sentence.substring(1);
 
     var characterFile = getCharacterAudioFile(character);
-    var player = new Audio();
-    player.src = characterFile;
-    player.mozPreservesPitch = false;
-    player.playbackRate = playbackSpeed;
-    player.play();
+    if (characterFile) {
+        var player = new Audio();
+        player.src = characterFile;
+        player.mozPreservesPitch = false;
+        player.playbackRate = playbackSpeed;
+        player.play();
+        //var sound = new Howl({
+            //src: characterFile,
+            //volume: .5,
+        //})
+        //sound.rate(playbackSpeed)
+        //sound.play();
+    }
     setTimeout(speakNextCharacter, 70);
 }
 
@@ -48,6 +58,23 @@ function getCharacterAudioFile(character) {
         return null;
     } else {
         return bebebese;
+    }
+}
+
+function targetQuery(nameQuery) {
+    let targetQuery = document.querySelector(nameQuery);
+    return targetQuery
+}
+
+function appendText(nameElement) {
+    let targetElement = document.querySelector(nameElement);
+
+    if (targetElement) {
+        let targetElementContent = targetElement.textContent;
+        if (targetElementContent) {
+            sentence += targetElementContent;
+            //targetElement.textContent = "";
+        }
     }
 }
 
@@ -83,3 +110,4 @@ function removeSpaces(sentence) {
     sentence = sentence.replace(" ", "");
     return sentence;
 }
+

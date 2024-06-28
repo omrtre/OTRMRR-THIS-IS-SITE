@@ -1118,10 +1118,10 @@ a:visited > span.jittery {
 .objSpeechBubbleText {
 	border: 20px solid transparent;
     border-image: url(/assets/app/otrmrr/res/objBubbleSpeechHead.svg);
-	border-image-slice: 36;
-	border-image-width: 36px;
+	border-image-slice: 27;
+	border-image-width: 27px;
 	background-color: #e5e5e5;
-	border-image-repeat: round;
+	border-image-repeat: stretch;
     width: 16em;
     height: auto;
     text-wrap: balance;
@@ -1171,4 +1171,158 @@ a:visited > span.jittery {
 	left: unset;
 	right: 5px;
 	bottom: 0;
+}
+
+.nav-links > .menuOption {
+	position: relative;
+	transform-origin: left bottom;
+}
+
+
+.pageOmnitome {
+	width: 45em;
+	height: 100vh;
+	background-color: #eccfc0;
+	border: #f2dace 1px solid;
+	margin-top: 20px;
+}
+
+.pageOmnitome:nth-child(odd) {
+	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 85%, rgba(180, 133, 110, 0.4784313725) 100%),linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(180, 133, 110, 0.4784313725) 100%)
+}
+
+.pageOmnitome:nth-child(even) {
+	background-image: linear-gradient(90deg, rgba(255,255,255,0) 85%, #b4856e7a 100%), linear-gradient(-90deg, rgba(255,255,255,0) 50%, #b4856e7a 100%);
+
+}
+
+.containerContentOmnitome {
+	margin: 0 6em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.sceneOmnitome {
+	width: 100%;
+	height: 100vh;
+	z-index: 30;
+	position: relative;
+	background-color: #000000b2;
+	overflow-y: scroll;
+}
+
+.containerOmnitome { 
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.coverOmnitome {
+	width: 60em;
+	margin: auto;
+	height: max-content;
+}
+
+.contentOmnitome {
+	padding: 40px;
+	line-height: 2;
+	margin: 0 20px;
+	text-wrap: balance;
+	max-width: 28em;
+	color: #3b1303;
+}
+
+.contentOmnitome > p {
+	filter: drop-shadow(0 1px 0 #fff8e7);
+	font-size: 0.85em;
+}
+
+.contentOmnitome > h1 {
+	font-family: 'ITC Avant Garde Gothic Pro';
+	font-variant: small-caps;
+	margin-bottom: 0;
+}
+
+.visualizerVinylPlayer {
+	height: auto;
+	width: 600px;
+	filter: drop-shadow(0 2px 0 #fff8e7);
+}
+
+.pageOmnitome::before {
+	display: block;
+	width: 98em;
+	height: 100%;
+	background-color: #8d040a;
+	content: '';
+	z-index: -35;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border: 4px solid #480808;
+}
+
+.visualizerModuleController {
+	display: grid;
+	grid-template-areas:
+  "name stop prev play next";
+	grid-template-columns: auto 50px 50px 50px 50px;
+	grid-template-rows: 50px;
+	border: 2px solid #cca997;
+	background-color: #fffbf3;
+	border-radius: 14px;
+	align-items: center;
+	justify-items: center;
+}
+
+.vizButton {
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 1.5em;
+}
+
+#stop.vizButton::before {
+	content: '⏹';
+	margin: auto;
+	display: inline-block;
+}
+
+#prev.vizButton::before {
+	content: '⏮';
+}
+
+#play.vizButton::before {
+	content: '▶';
+}
+
+#next.vizButton::before {
+	content: '⏭';
+}
+
+.visualizerPortableCDScreen {
+	width: 600px;
+	height: 340px;
+	background-color: #dcdcdc;
+}
+
+.visualizerPortableCDControl {
+	width: 600px;
+	height: 340px;
+	background-color: lightgray;
+}
+
+.visualizerPortableCD {
+	width: 300px;
+	height: auto;
+	margin: auto;
+	top: 15px;
+	bottom: 0;
+	position: relative;
+	left: 0;
+	right: 0;
 }

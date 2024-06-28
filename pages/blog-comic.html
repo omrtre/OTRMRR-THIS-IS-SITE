@@ -14,16 +14,7 @@ id: comic
         <div class="layoutHeaderLogo">
             <img src="/assets/app/otrmrr/title/oturtmurr-logo.jpg" height="auto" width="150">
         </div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="/profile"><span class="jittery">ABOUT!</span></a></li>
-                <li><a href="/works"><span class="jittery">WORK.</span></a></li>
-                <li><a href="/contact"><span class="jittery">CONTACT?</span></a></li>
-                <li><a href="/theatre"><span class="jittery">THEATRE</span></a></li>
-                <li><a href="/jukebox"><span class="jittery">JUKEBOX</span></a></li>
-                <li><a href="/comic"><span class="jittery">BLOG</span></a></li>
-            </ul>
-        </nav>
+        {% include nav.html %}
     </div>
     <div class="layoutComicPanels">
         {% for x in site.posts %}

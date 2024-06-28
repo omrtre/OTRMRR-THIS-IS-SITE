@@ -58,6 +58,7 @@ permalink: /profile/
                     <p>{{ site.data.actorDialogue.otto.name }}</p>
                 </div>
                 <div class="objSpeechBubbleText" id="otto">
+                    {{ site.data.actorDialogue.otto.dialogue.intro }}
                 </div>
             </div>
         </div>
@@ -163,9 +164,9 @@ permalink: /profile/
         animEnterActorTL.fromTo("#oz.objSprite", {x:380, y:900}, {x:0, y:0, duration:1, ease: 'expo.out'})
         animEnterActorTL.fromTo("#otto.objSprite", {y:900}, {y:0,duration:2, ease: 'elastic.out(1,0.5)'})
         //animEnterActorTL.to(animText, {opacity:1})
-        animEnterActorTL.fromTo("#oz.objSpeechBubble", {opacity: 0, rotate:'-180deg'}, {duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
+        animEnterActorTL.fromTo("#oz.objSpeechBubble", {opacity: 0, rotate:'-180deg', scaleX: 0}, {duration:3, opacity:1, rotate: '0deg', scaleX: 1, ease: 'expo.out'})
         animEnterActorTL.fromTo("#oz.objSpeechBubbleText", {visibility: false}, {visibility: true})
-        animEnterActorTL.fromTo("#otto.objSpeechBubble", {opacity: 0, rotate:'180deg'}, {delay:6, duration:3, opacity:1, rotate: '0deg', ease: 'expo.out'})
+        animEnterActorTL.fromTo("#otto.objSpeechBubble", {opacity: 0, rotate:'180deg', scaleX: 0}, {delay:6, duration:3, opacity:1, scaleX: 1, rotate: '0deg', ease: 'expo.out'})
         animEnterActorTL.fromTo("#otto.objSpeechBubbleText", {visibility: false}, {visibility: true})
     //})
 
@@ -191,13 +192,25 @@ permalink: /profile/
 
     animOzActorText = new TypeIt("#otto.objSpeechBubbleText", {
         speed: 50,
-        strings: "{{ site.data.actorDialogue.otto.dialogue.intro }}",
         cursor: false,
         startDelay: 20000,
         lifelike: true,
         waitUntilVisible: true
     }).go();
-    
 
+    let maxValue = 0
+    const targetText = targetQuery('#oz.objSpeechBubbleText')
 
+    //setInterval, rpeeatedly calls a function, within a set interval
+    const intervalID = setInterval(() => {
+        appendText('#oz.objSpeechBubbleText');
+
+        if (sentence.length > 0) {
+            onCharSpeak();
+            //maxValue += targetText.textContent.length
+            if (targetText.textContent.length > sentence.length) {
+                clearInterval(intervalID)
+            }
+        }
+    }, 100);
 </script>

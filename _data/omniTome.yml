@@ -1,0 +1,91 @@
+---
+- EGO: 
+  codename: EGO
+  content:
+    - synopsis: |
+        Year 2180, March 3rd marks the release of Web 5.3.0, A.K.A, Internet 2.0. Welcome to the Virtual Revolution, the advent of Reality and Virtual Reality bridging technology. The Human body is now capable of accessing a virtually-physical dimension to interact with others within the same dimension.
+        
+        A psychology firm and interactive game software company collaborate to create an application that combines digital messaging and virtual-reality.
+        
+        A brotherhood of young men, the VELVETEERS, meet each other “physically” virtually in-person. The long hours spent in the dimension, causes the young men  to descend into lunacy—launching a massive infighting war.
+        
+        The Velveteers discover, “roasting”, mentally touches their opponent, cutting their connection to virtual-reality temporarily. The GAME OF ROAST goes viral, the application hits a breaking point causing a worldwide blackout. The application is deemed illegal and defunct.
+        
+        After years of inactivity, the application is rereleased anonymously. Now, virtual avatars can cross into the real world. BAD ACTORS appear to strike against society. The world is in need of virtual vigilantes. The Velveteers take responsibility, to reclaim their titles, and save the world wide web from $h!++!ng itself.
+    - casting:
+        actors:
+          major:
+            - profile: 
+              char: DeManis Willsworth / De'Menace / El Maton
+              actor: "@Loon_DeMenace"
+            - profile:
+              char: Elric / Nanzo Cruelittle / RAND 0
+              actor : "@Ittle_Nanzo"
+            - profile:
+              char: Zi'Coreus / Xicoreus Cruelittle / Honor::Prime
+              actor: "@Xicorus"
+            - profile:
+              char: Osiris Tentemba / Oz Onor / Ozymandias
+              actor: Osiris Tentemba
+          minor:
+            - profile:
+              char: Priscilla Vanderbolt / PSSST!
+              actor: "@pswelcometomylife"
+        collaborators:
+          illustrators:
+            - "@oturtmurr"
+            - "@cubesona"
+          composers:
+            - "@JG GenesisKeys"
+            - "@oturtmurr"
+          programmers:
+            - "@oturtmurr"
+    - blog:
+    - impact:
+        - socPost:
+          title: News Article Goes Viral
+          photo: /asset/image/xxx.png
+          date: 02/04/24
+          outcome: Multiple news networks had taken notice of the ad posted.
+    - research:
+        - cluster:
+          concept: '"Ego Eimi" :: I am myself.'
+          citation: Wikipedia contributors. (2024, June 1). Ego eimi. In Wikipedia, The
+            Free Encyclopedia. Retrieved 20:26, June 23, 2024, from
+            https://en.wikipedia.org/w/index.php?title=Ego_eimi&oldid=1226785820
+          reference: https://en.wikipedia.org/wiki/Ego_eimi
+        - cluster:
+          concept: '"Egomania" :: The crisis of myself.'
+          citation: Wikipedia contributors. (2024, June 1). Ego eimi. In Wikipedia, The
+            Free Encyclopedia. Retrieved 20:26, June 23, 2024, from
+            https://en.wikipedia.org/w/index.php?title=Ego_eimi&oldid=1226785820
+          reference: https://en.wikipedia.org/wiki/Egomania
+    - scrapbook:
+        - photo:
+          res: /assets/photo/ego/xxx.png
+          caption: Group Photo
+          type: Illustration
+    - music:
+        - song:
+          title: The Sun Came Late That Day
+          composer: JG GenesisKeys
+          description: Main Titles theme.
+          res: /assets/audio/xxx.ogg
+    - cinema:
+        - movie:
+          title: Welcome to the Egoverse
+          director: Oz
+          description: Storyboard animatic for the Welcome to the Egoverse scene.
+          link: null
+    - multimedia:
+        - link: https://campaign.oturtworks.tv/egomania/initiate
+          image: null
+          description: You've been invitited to be initiated. Help a group of young men on
+            a journey to take back real world into their physical hands.
+    - expansions:
+        - node:
+          title: Motion Reaction Images
+          gear: 1
+          revolution: 1
+          description: null
+          content: null
