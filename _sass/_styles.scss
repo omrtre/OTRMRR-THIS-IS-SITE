@@ -276,7 +276,7 @@ a.uki-ftr-atr-link {
 
 }
 
-.panelBorder {
+.panelBorder, .portalMI-border {
 	position: absolute;
 	border: 1px solid rgba(0, 0, 0, 0);
 	border-image-source: url(/assets/app/otrmrr/gui/guiCmcPanelSquare.png);
@@ -759,11 +759,11 @@ a.uki-ftr-atr-link {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	//position: absolute;
+	//top: 0;
+	//bottom: 0;
+	//right: 0;
+	//left: 0;
 	overflow-y: scroll;
 }
 
@@ -947,9 +947,10 @@ a.uki-ftr-atr-link {
 }
 
 .menuWindowAction {
-	position: absolute;
+	position: fixed;
 	z-index: 20;
-	right: 0;
+	top: 10px;
+	right: 10px;
 }
 
 .scnContact-PotraitPhoto {
@@ -1115,7 +1116,19 @@ a:visited > span.jittery {
     top: 200px;
 }
 
-.objSpeechBubbleText {
+.sceneActorGroup {
+	position: relative;
+}
+
+#otto.objSpeechBubble[data-dialogue-id="10"] {
+	right: 400px;
+	left: unset;
+	top: 200px;
+	position: absolute;
+}
+
+
+.objSpeechBubbleText, .objSpeechBubbleTextAddendum {
 	border: 20px solid transparent;
     border-image: url(/assets/app/otrmrr/res/objBubbleSpeechHead.svg);
 	border-image-slice: 27;
@@ -1173,7 +1186,7 @@ a:visited > span.jittery {
 	bottom: 0;
 }
 
-.nav-links > .menuOption {
+.nav-links > .menuOption > li {
 	position: relative;
 	transform-origin: left bottom;
 }
@@ -1184,7 +1197,6 @@ a:visited > span.jittery {
 	height: 100vh;
 	background-color: #eccfc0;
 	border: #f2dace 1px solid;
-	margin-top: 20px;
 }
 
 .pageOmnitome:nth-child(odd) {
@@ -1201,13 +1213,14 @@ a:visited > span.jittery {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	row-gap: 8em;
 }
 
 .sceneOmnitome {
 	width: 100%;
 	height: 100vh;
 	z-index: 30;
-	position: relative;
+	position: absolute;
 	background-color: #000000b2;
 	overflow-y: scroll;
 }
@@ -1215,7 +1228,7 @@ a:visited > span.jittery {
 .containerOmnitome { 
 	width: 100%;
 	height: 100%;
-	display: flex;
+	//display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
@@ -1227,7 +1240,7 @@ a:visited > span.jittery {
 }
 
 .contentOmnitome {
-	padding: 40px;
+	padding: 0 40px ;
 	line-height: 2;
 	margin: 0 20px;
 	text-wrap: balance;
@@ -1250,6 +1263,10 @@ a:visited > span.jittery {
 	height: auto;
 	width: 600px;
 	filter: drop-shadow(0 2px 0 #fff8e7);
+}
+
+#synopsis.contentOmnitome {
+	width: 820px;
 }
 
 .pageOmnitome::before {
@@ -1323,6 +1340,244 @@ a:visited > span.jittery {
 	top: 15px;
 	bottom: 0;
 	position: relative;
-	left: 0;
 	right: 0;
 }
+
+.portalMultimediaInteractive {
+	position: relative;
+	width: 600px;
+	height: 700px;
+}
+
+.portalMI-contentObj {
+	height: auto;
+	width: 50%;
+}
+
+.portalMI-contentBG {
+	background-size: cover;
+	height: 700px;
+	width: 600px;
+	transform-origin: bottom center;
+}
+
+.portalBGMass {
+	background-color: #0a0024;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#EGO.portalMI-contentBG {
+	background-image: url("/assets/app/otrmrr/bg/tileEGO.png");
+	background-repeat: repeat-x;
+	image-rendering: pixelated;
+}
+
+#title.portalMI-contentObj {
+	height: fit-content;
+	width: 50%;
+}
+
+.portalMI-contentObj {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.portalMI-border {
+	height: 700px;
+}
+
+.portalTitleBackdrop {
+	width: 480px;
+	height: 480px;
+	position: absolute;
+	margin: auto;
+	background-color: #0d001f;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	filter: blur(50px);
+	mix-blend-mode: hard-light;
+}
+
+.starburst {
+	width: 200px; /* adjust to control the size */
+	aspect-ratio: 1;
+	clip-path: polygon(100% 50%,85.69% 54.7%,98.3% 62.94%,83.26% 63.78%,93.3% 75%,78.56% 71.92%,85.36% 85.36%,71.92% 78.56%,75% 93.3%,63.78% 83.26%,62.94% 98.3%,54.7% 85.69%,50% 100%,45.3% 85.69%,37.06% 98.3%,36.22% 83.26%,25% 93.3%,28.08% 78.56%,14.64% 85.36%,21.44% 71.92%,6.7% 75%,16.74% 63.78%,1.7% 62.94%,14.31% 54.7%,0% 50%,14.31% 45.3%,1.7% 37.06%,16.74% 36.22%,6.7% 25%,21.44% 28.08%,14.64% 14.64%,28.08% 21.44%,25% 6.7%,36.22% 16.74%,37.06% 1.7%,45.3% 14.31%,50% 0%,54.7% 14.31%,62.94% 1.7%,63.78% 16.74%,75% 6.7%,71.92% 21.44%,85.36% 14.64%,78.56% 28.08%,93.3% 25%,83.26% 36.22%,98.3% 37.06%,85.69% 45.3%);
+}
+
+#release.starburst {
+	background-image: linear-gradient(goldenrod, rgb(198, 124, 14));
+	position: absolute;
+	z-index: 5;
+	right: -50px;
+	top: -50px;
+}
+
+.starburstText {
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: fit-content;
+	height: fit-content;
+	font-size: 1.2em;
+	counter-reset: #fff8e7;
+	filter: drop-shadow(0 2px 0 goldenrod);
+}
+
+
+@keyframes flicker {
+	0% {opacity: 0.27861;}
+	5% {opacity: 0.34769;}
+	10% {opacity: 0.23604;}
+	15% {opacity: 0.90626;}
+	20% {opacity: 0.18128;}
+	25% {opacity: 0.83891;}
+	30% {opacity: 0.65583;}
+	35% {opacity: 0.67807;}
+	40% {opacity: 0.26559;}
+	45% {opacity: 0.84693;}
+	50% {opacity: 0.96019;}
+	55% {opacity: 0.08594;}
+	60% {opacity: 0.20313;}
+	65% {opacity: 0.71988;}
+	70% {opacity: 0.53455;}
+	75% {opacity: 0.37288;}
+	80% {opacity: 0.71428;}
+	85% {opacity: 0.70419;}
+	90% {opacity: 0.7003;}
+	95% {opacity: 0.36108;}
+	100% {opacity: 0.24387;}
+}
+
+.portalMI-contentFG {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#overlay_dimlights {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	content: "";
+	box-shadow: inset 0 0 20px #000;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#overlay_raster {
+	/*background: rgba(0, 0, 0, 0.5) url(/assets/app/uniwki/system-ui/gui/gui_uniwki-screen_Raster-Scan.png) repeat;*/
+	/*content: " ";*/
+	/*display: block;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	z-index: 0;
+	background-size: 100% 8px, 4px 100%;
+	pointer-events: none;
+	filter: invert(1);
+	opacity: .5;
+}
+
+/*This adds a "flickering screen" effect*/
+#overlay_raster-vfx {
+	/*content: " ";*/
+	/*display: block;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(18, 16, 16, 0.1);
+	opacity: 0;
+	z-index: 1;
+	pointer-events: none;
+	animation: flicker 0.15s infinite;
+}
+
+.objExpansionDisk {
+	width: 15em;
+	height: auto;
+	position: relative;
+	filter: drop-shadow(0 2px 0 #fff8e7);
+}
+
+.objExpansionDisk > p {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-wrap: balance;
+	width: 50%;
+}
+
+.containerExpansionDiskDrive {
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 640px;
+	max-height: 560px;
+	overflow-y: scroll;
+	display: flex;
+	row-gap: 2em;
+	column-gap: 3em;
+}
+
+.sceneOmnibusLibrary {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.objActorOtto {
+	position: relative;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	margin-bottom: -340px;
+	z-index: -1;
+	transform-origin: center bottom;
+}
+
+#otto.objSpeechBubbleTextAddendum[data-dialogue-id="10.2"] {
+	left: 100px;
+	position: absolute;
+	bottom: -105px;
+	width: 50%;
+}
+
+.containerLongform {
+	margin: 0 auto;
+	width: 60em;
+	padding: 10em;
+}
+
+.titleLongform > h1 {
+	color: goldenrod;
+	font-family: 'ITC Avant Garde Gothic Pro';
+	font-variant: small-caps;
+	margin-bottom: 0;
+}
+
+.contentLongform {
+	color: #fff8e7;
+	width: 100%;
+}
+

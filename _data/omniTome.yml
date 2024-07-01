@@ -78,14 +78,308 @@
           description: Storyboard animatic for the Welcome to the Egoverse scene.
           link: null
     - multimedia:
-        - link: https://campaign.oturtworks.tv/egomania/initiate
-          image: null
-          description: You've been invitited to be initiated. Help a group of young men on
-            a journey to take back real world into their physical hands.
+        link: https://campaign.oturtworks.tv/egomania/initiate
+        tag: Engage!
+        description: |
+          [[ ERGO, EGO EIMI. EGOMANIA. ]]
+          "Therefore, I am myself. "
+          "The crisis of myself."
     - expansions:
-        - node:
-          title: Motion Reaction Images
+        - title: Motion Reaction Images
           gear: 1
-          revolution: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Motion Graphic Film
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Roleplaying Simulator
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Motion Comic Film
+          gear: 2
+          rev: 1
+          description: null
+          content: null
+        - title: Web Game Application
+          gear: 2
+          rev: 1
+          description: null
+          content: null
+        - title: Feature Animated Film 
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+        - title: Prototype Demo
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+        - title: Proof Demo
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+
+- YMA: 
+  codename: YMA
+  content:
+    - synopsis: |
+        On the hills of Manachuria, the snow-covered mountains and ice-glazed lakes becomes fair ground to reckless wartime play-fighting.
+        
+        A 21-year war has dragged on. No man knows who or what they are fighting for, but the common consensus has come down to three goals:
+        - Avoid DEATH, and live to fight for the next day.
+        - Uphold a KILLSTREAK to maintain a RESPAWN cycle.
+        - Be lucky to operate a TOY or gain the power of FLIGHT.
+        
+        The largest TOY known in the war has made its debut. It successfully realizes a possible conclusion to the war and the imminent destruction of several Academies. The TOY is destroyed by a single soldier. The aftermath of this event shocks the Academies, throwing each one on a mad-dash to conclude the war on their own terms, by all means necessary.
+        
+        In the clouds, below the bounds of the Ether, a churning plot boils. While the Academies fight to obtain a grip over the tide of the war, a storm approaches on the horizon, spelling exact doom for all Academies.
+    - casting:
+        actors:
+          major:
+            - profile: 
+              char: Odionas / De'Menace / El Maton
+              actor: "@Loon_DeMenace"
+            - profile:
+              char: Elric / Nanzo Cruelittle / RAND 0
+              actor : "@Ittle_Nanzo"
+            - profile:
+              char: Zi'Coreus / Xicoreus Cruelittle / Honor::Prime
+              actor: "@Xicorus"
+            - profile:
+              char: Osiris Tentemba / Oz Onor / Ozymandias
+              actor: Osiris Tentemba
+          minor:
+            - profile:
+              char: Priscilla Vanderbolt / PSSST!
+              actor: "@pswelcometomylife"
+        collaborators:
+          illustrators:
+            - "@oturtmurr"
+            - "@cubesona"
+          composers:
+            - "@JG GenesisKeys"
+            - "@oturtmurr"
+          programmers:
+            - "@oturtmurr"
+    - blog:
+    - impact:
+        - socPost:
+          title: News Article Goes Viral
+          photo: /asset/image/xxx.png
+          date: 02/04/24
+          outcome: Multiple news networks had taken notice of the ad posted.
+    - research:
+        - cluster:
+          concept: '"Ego Eimi" :: I am myself.'
+          citation: Wikipedia contributors. (2024, June 1). Ego eimi. In Wikipedia, The
+            Free Encyclopedia. Retrieved 20:26, June 23, 2024, from
+            https://en.wikipedia.org/w/index.php?title=Ego_eimi&oldid=1226785820
+          reference: https://en.wikipedia.org/wiki/Ego_eimi
+        - cluster:
+          concept: '"Egomania" :: The crisis of myself.'
+          citation: Wikipedia contributors. (2024, June 1). Ego eimi. In Wikipedia, The
+            Free Encyclopedia. Retrieved 20:26, June 23, 2024, from
+            https://en.wikipedia.org/w/index.php?title=Ego_eimi&oldid=1226785820
+          reference: https://en.wikipedia.org/wiki/Egomania
+    - scrapbook:
+        - photo:
+          res: /assets/photo/ego/xxx.png
+          caption: Group Photo
+          type: Illustration
+    - music:
+        - song:
+          title: The Sun Came Late That Day
+          composer: JG GenesisKeys
+          description: Main Titles theme.
+          res: /assets/audio/xxx.ogg
+    - cinema:
+        - movie:
+          title: Welcome to the Egoverse
+          director: Oz
+          description: Storyboard animatic for the Welcome to the Egoverse scene.
+          link: null
+    - multimedia:
+        link: https://campaign.oturtworks.tv/egomania/initiate
+        tag: Engage!
+        description: |
+          [[ ERGO, EGO EIMI. EGOMANIA. ]]
+          "Therefore, I am myself. "
+          "The crisis of myself."
+    - expansions:
+        - title: Motion Reaction Images
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Motion Graphic Film
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Roleplaying Simulator
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Motion Comic Film
+          gear: 2
+          rev: 1
+          description: null
+          content: null
+        - title: Web Game Application
+          gear: 2
+          rev: 1
+          description: null
+          content: null
+        - title: Feature Animated Film 
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+        - title: Prototype Demo
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+        - title: Proof Demo
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+
+
+- RDK: 
+  codename: RDK
+  content:
+    - synopsis: |
+        By now, the Earth’s Sea levels have risen to limits unimaginable. A metropolis who refused to evacuate, barricaded against the violent weather conditions, collapses under pressure—the Metropolis is now half submerged underwater. 
+
+        Atlanteans arose from the calamity and made the Metropolis anew—a society for the wild, a home to a lifestyle unrestrained. 
+
+        New Oceane is the epicenter of music and art. From around a stagnant world, people of all ethnicities, typically of young adult age, seek stardom here.
+
+        A young man from an exotic land arrives in New Oceane to sponsor a novel invention: The Miracle 808 Soul Machine. A mystical machine which grants an individual the ability to “visualize the rhythm of their heart” and convert the vibrations into visual sound waves within reality, enhancing the experience of music.
+
+        Unfortunately, after his success: getting signed with a record label and collaborating with newfound friends, he is let go, poisoned, and has his invention stolen and mass produced. 
+
+        Here lies a cautionary tale of a young man who once had it all, deciding that the rest of his life should be dedicated for revenge.
+    - casting:
+        actors:
+          major:
+            - profile: 
+              char: DeManis Willsworth / De'Menace / El Maton
+              actor: "@Loon_DeMenace"
+            - profile:
+              char: Elric / Nanzo Cruelittle / RAND 0
+              actor : "@Ittle_Nanzo"
+            - profile:
+              char: Zi'Coreus / Xicoreus Cruelittle / Honor::Prime
+              actor: "@Xicorus"
+            - profile:
+              char: Osiris Tentemba / Oz Onor / Ozymandias
+              actor: Osiris Tentemba
+          minor:
+            - profile:
+              char: Priscilla Vanderbolt / PSSST!
+              actor: "@pswelcometomylife"
+        collaborators:
+          illustrators:
+            - "@oturtmurr"
+            - "@cubesona"
+          composers:
+            - "@JG GenesisKeys"
+            - "@oturtmurr"
+          programmers:
+            - "@oturtmurr"
+    - blog:
+    - impact:
+        - socPost:
+          title: News Article Goes Viral
+          photo: /asset/image/xxx.png
+          date: 02/04/24
+          outcome: Multiple news networks had taken notice of the ad posted.
+    - research:
+        - cluster:
+          concept: '"Ego Eimi" :: I am myself.'
+          citation: Wikipedia contributors. (2024, June 1). Ego eimi. In Wikipedia, The
+            Free Encyclopedia. Retrieved 20:26, June 23, 2024, from
+            https://en.wikipedia.org/w/index.php?title=Ego_eimi&oldid=1226785820
+          reference: https://en.wikipedia.org/wiki/Ego_eimi
+        - cluster:
+          concept: '"Egomania" :: The crisis of myself.'
+          citation: Wikipedia contributors. (2024, June 1). Ego eimi. In Wikipedia, The
+            Free Encyclopedia. Retrieved 20:26, June 23, 2024, from
+            https://en.wikipedia.org/w/index.php?title=Ego_eimi&oldid=1226785820
+          reference: https://en.wikipedia.org/wiki/Egomania
+    - scrapbook:
+        - photo:
+          res: /assets/photo/ego/xxx.png
+          caption: Group Photo
+          type: Illustration
+    - music:
+        - song:
+          title: The Sun Came Late That Day
+          composer: JG GenesisKeys
+          description: Main Titles theme.
+          res: /assets/audio/xxx.ogg
+    - cinema:
+        - movie:
+          title: Welcome to the Egoverse
+          director: Oz
+          description: Storyboard animatic for the Welcome to the Egoverse scene.
+          link: null
+    - multimedia:
+        link: https://campaign.oturtworks.tv/egomania/initiate
+        tag: Engage!
+        description: |
+          [[ ERGO, EGO EIMI. EGOMANIA. ]]
+          "Therefore, I am myself. "
+          "The crisis of myself."
+    - expansions:
+        - title: Motion Reaction Images
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Motion Graphic Film
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Roleplaying Simulator
+          gear: 1
+          rev: 1
+          description: null
+          content: null
+        - title: Motion Comic Film
+          gear: 2
+          rev: 1
+          description: null
+          content: null
+        - title: Web Game Application
+          gear: 2
+          rev: 1
+          description: null
+          content: null
+        - title: Feature Animated Film 
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+        - title: Prototype Demo
+          gear: 3
+          rev: 1
+          description: null
+          content: null
+        - title: Proof Demo
+          gear: 3
+          rev: 1
           description: null
           content: null

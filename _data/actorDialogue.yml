@@ -3,6 +3,9 @@ otto:
   dialogue:
     intro:
       - "You bet we'll be pushing an idea to its' absolute breaking point."
+    works:
+      - "Day and night, my associate and I do our best to make our ideas a reality."
+      - "[Take a look?](#opera)"
 oz:
   name: Oz
   dialogue:

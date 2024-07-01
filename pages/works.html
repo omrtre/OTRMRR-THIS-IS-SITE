@@ -5,36 +5,13 @@ permalink: /works/
 ---
 
 <div class="sceneWorksView_Shelf">
-    <div class="scnWorks-ObjBookcase">
-        <div class="scnWorksBookcaseSection" id="opera">
-            <div class="scnWrks_ObjBookcasePlaque" id="opera">
-                <p>Omniopera</p>
-            </div>
-            <div class="scnWorks_ObjBookcaseRow" id="opera">
-                <div class="scnWorks-ObjOmniopus" id="opera">
-                    {% for o in site.data.works.collections %}
-                        <div class="objOmnibusCase" id="{{o.code}}" data-omnitome-val="{{o.id}}">
-                            <object style="pointer-events: none;" data="/assets/app/otrmrr/res/omnibus-{{o.code}}.svg" type="image/svg+xml"></object>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <div class="scnWorksBookcaseSection" id="zine">
-            <div class="scnWrks_ObjBookcasePlaque" id="zine">
-                <p>Zines</p>
-            </div>
-            <div class="scnWorks_ObjBookcaseRow" id="zine">
-                <div class="scnWorks-ObjOmniopus" id="zine"></div>
-            </div>
-        </div>
-    </div>
-    <div class="sceneOmnitome" style="display: none;">
+    <div class="sceneOmnitome" id="menu" style="display: none; z-index: 199;">
+        <div id="menuWindowExit" class="menuWindowAction"></div>
         {% for tome in site.data.omniTome %}
             <div class="containerOmnitome" style="display: none;" id={{tome.codename}}>
                 <div class="containerContentOmnitome">
                     <div class="coverOmnitome" id={{tome.codename}}>
-                        <object data="/assets/app/otrmrr/res/objOmnitome-{{tome.codename}}.svg" type="image/svg+xml"></object>
+                        <object data="/assets/app/otrmrr/res/objOmnitome{{tome.codename}}-Cover.svg" type="image/svg+xml"></object>
                     </div>
                     {% for page in tome.content %}
                         {% for item in page %}
@@ -174,9 +151,41 @@ permalink: /works/
                                         </div>
 
                                     {% when 'multimedia' %}
-
+                                    <a href="{{item[1].link}}">
+                                        <div class="portalMultimediaInteractive" id="{{tome.codename}}">
+                                            <div class="starburst" id="release">
+                                                <div class="starburstText">
+                                                    <p>{{item[1].tag}}</p>
+                                                </div>
+                                            </div>
+                                            <div id="ifxParallax">
+                                                <div data-depth="0.15" class="portalMI-border" style="z-index: 5;"></div>
+                                                <div data-depth="0.2" class="portalMI-contentFG" style="z-index: 4;">
+                                                    <div id="overlay_dimlights"></div>
+                                                    <div id="overlay_raster"></div>
+                                                    <div id="overlay_raster-vfx"></div>
+                                                </div>
+                                                <div data-depth="0.4" class="portalMI-contentObj" id="title" style="z-index: 2;">
+                                                    <img src="/assets/app/otrmrr/title/title{{tome.codename}}.png" width="100%" height="auto">
+                                                    <p style="color: aqua; text-align: center; text-wrap: balance;">{{item[1].description | newline_to_br }}</p>
+                                                </div>
+                                                <div data-depth="0.1" style="position: absolute !important; z-index: -1; overflow: hidden;">
+                                                    <div class="portalTitleBackdrop"></div>
+                                                    <div class="portalBGMass"></div>
+                                                    <div class="portalMI-contentBG" id="{{tome.codename}}"></div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                     {% when 'expansions' %}
-
+                                        <div class="containerExpansionDiskDrive">
+                                            {% for disk in item[1] %}
+                                                <div class="objExpansionDisk">
+                                                    <p>{{disk.title}} <br> ⚙ x {{disk.gear}} 🧰 x {{disk.rev}}</p>
+                                                    <object data="/assets/app/otrmrr/res/objExpansionFloppy.svg" type="image/svg+xml"></object>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
                                     {% endcase %}
                             </div>            
                         </div>
@@ -186,6 +195,50 @@ permalink: /works/
             </div>
         {% endfor %}
     </div>
+    <div class="sceneOmnibusLibrary">
+        <div class="sceneActorGroup">
+            <div class="objSpeechBubble" id="otto" data-dialogue-id="10">
+                <div class="objSpeechBubbleNametag" id="otto">
+                    <p>{{ site.data.actorDialogue.otto.name }}</p>
+                </div>
+                <div class="objSpeechBubbleText" id="otto" >
+                    {{ site.data.actorDialogue.otto.dialogue.works[0] }}
+                </div>
+                <div class="objSpeechBubbleTextAddendum" id="otto" data-dialogue-id="10.2">
+                    {{ site.data.actorDialogue.otto.dialogue.works[1] | markdownify }}
+                </div>
+            </div>
+
+            <div class="objActorOtto">
+                <img src="/assets/app/otrmrr/res/objActor-Otto.svg"></img>
+            </div>
+        </div>
+        <div class="scnWorks-ObjBookcase">
+            <div class="scnWorksBookcaseSection" id="opera">
+                <div class="scnWrks_ObjBookcasePlaque" id="opera">
+                    <h1 id="opera">Omniopera</h1>
+                </div>
+                <div class="scnWorks_ObjBookcaseRow" id="opera">
+                    <div class="scnWorks-ObjOmniopus" id="opera">
+                        {% for o in site.data.works.collections %}
+                            <div class="objOmnibusCase" id="{{o.code}}" data-omnitome-val="{{o.id}}">
+                                <object style="pointer-events: none;" data="/assets/app/otrmrr/res/objOmnitome{{o.code}}-Spine.svg" type="image/svg+xml"></object>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="scnWorksBookcaseSection" id="zine">
+                <div class="scnWrks_ObjBookcasePlaque" id="zine">
+                    <p>Zines</p>
+                </div>
+                <div class="scnWorks_ObjBookcaseRow" id="zine">
+                    <div class="scnWorks-ObjOmniopus" id="zine"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 <script>
@@ -195,7 +248,33 @@ permalink: /works/
     const domVisualizerPlayer = document.querySelector('.visualVinylGraphic')
     const domPlayerPlayButton = document.querySelector('#play.vizButton')
     const domPlayerStopButton = document.querySelector('#stop.vizButton')
-    let animeVinylTween = gsap.to('.visualVinylGraphic', {rotate: '360deg', ease: 'none', duration: 4, repeat:-1, paused: true})
+    let animeVinylTween = gsap.to('.visualVinylGraphic', {rotate: '360deg', ease: 'none', duration: 4, repeat:-1, paused: 'true'})
+
+    const eleMenu = document.getElementById('menu')
+    const eleMenuExit = document.getElementById('menuWindowExit')
+
+
+    const domScene = document.getElementById('ifxParallax');
+    const parallaxInstance = new Parallax(domScene);
+
+    const animOtto = gsap.timeline();
+    animOtto.fromTo(".objActorOtto", {rotate:'-180deg', y:600}, {delay: 2, rotate:'0deg', y:0, duration:2})
+    animOtto.fromTo(".objSpeechBubble", {opacity: 0, rotate:'-180deg', scaleX: 0}, {duration:3, opacity:1, rotate: '0deg', scaleX: 1, ease: 'expo.out'})
+    animOtto.fromTo(".objSpeechBubbleTextAddendum", {opacity: 0, y:-100}, {y:0, delay:1, duration:1, opacity:1, ease: 'expo.out'}, ">")
+
+    const animEgoVisualizer = gsap.timeline(); 
+
+    animEgoVisualizer.fromTo("#EGO.portalMI-contentBG", {scaleY:1}, {scaleY: 1.05, repeat:-1, duration:2, yoyo: 'true'}) 
+    animEgoVisualizer.to("#EGO.portalMI-contentBG", {duration:1, repeat:-1, yoyo:true, ease: "rough({template:none.out, strength:1,points:10,taper:none,randomize:true,clamp:false})", opacity: 0.5}, "<") 
+
+    /*
+    eleMenuExit.addEventListener('click', () => {
+        if (eleMenu.style.display === "block") {
+            //gsap.fromTo('#menu', {opacity: 1}, {opacity: 0, duration: .5})
+            document.querySelector(".sceneOmnitome").style.display = 'none'
+            targetOmnibusContainer.style.display = 'none';
+        }
+    });*/
 
     domPlayerPlayButton.addEventListener("click", () => {
         animeVinylTween.play();
@@ -215,6 +294,13 @@ permalink: /works/
             document.querySelector(".sceneOmnitome").style.display = 'block'
             targetOmnibusContainer.style.display = 'flex';
 
+            eleMenuExit.addEventListener('click', () => {
+                if (eleMenu.style.display === "block") {
+                    //gsap.fromTo('#menu', {opacity: 1}, {opacity: 0, duration: .5})
+                    document.querySelector(".sceneOmnitome").style.display = 'none'
+                }
+                targetOmnibusContainer.style.display = 'none';
+            });
         })
 
         omnibus.addEventListener("mouseout", ()=> {

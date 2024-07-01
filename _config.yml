@@ -22,7 +22,7 @@ title: OTURTMURR
 email: oturtmurr@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The official site for the creative duo Osi Tentemba and Otton von Bruno.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://oturtmurr.co" # the base hostname & protocol for your site, e.g. http://example.com
 
 # If you are using a host that cannot resolve URLs that do
