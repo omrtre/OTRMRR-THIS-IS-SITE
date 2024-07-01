@@ -818,7 +818,7 @@ a.uki-ftr-atr-link {
 	margin-right: 1.5em;
 }
 
-.sceneContact {
+.sceneContact, .sceneTheatre {
 	width: 100%;
 	height: 100%;
 }
@@ -1581,3 +1581,87 @@ a:visited > span.jittery {
 	width: 100%;
 }
 
+.scnTheatre-Stage, .scnTheatre-Gears, .scnTheatre-Curtains, .scnTheatre-Seats {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.scnTheatre-Stage {
+	z-index: 0;
+}
+
+.scnTheatre-Gears {
+	z-index: 1;
+}
+
+.scnTheatre-Curtains {
+	z-index: 2;
+	top: -10px;
+}
+
+#right.scnTheatre-Curtain {
+	width: 50%;
+	right: 0; //40%
+	position: absolute;
+	height: 100%;
+	transform-origin: center right;
+}
+
+#left.scnTheatre-Curtain {
+	position: absolute;
+	left: 0; //40%
+	width: 50%;
+	height: 100%;
+	top: 0;
+	transform-origin: center left;
+}
+
+.scnTheatre-Seats {
+	z-index: 3;
+	height: fit-content;
+  	bottom: 0;
+}
+
+#first.scnTheatre-SeatRow {
+	z-index: 5;
+	bottom: -150px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#second.scnTheatre-SeatRow {
+	z-index: 4;
+	bottom: -300px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.scnTheatre-ObjVideo {
+	width: 70%;
+	display: block;
+	height: auto;
+	margin: auto;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+#right.scnTheatre-Gear {
+	width: 10%;
+	position: absolute;
+	right: 80px;
+	height: auto;	
+}
+
+#left.scnTheatre-Gear {
+	width: 10%;
+	position: absolute;
+	left: 80px;
+	height: auto;	
+}

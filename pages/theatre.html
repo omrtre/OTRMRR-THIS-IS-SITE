@@ -10,29 +10,43 @@ permalink: /theatre/
                 <div class="scnTheatre-HeadDeco"></div>
             </div>
             <div class="scnTheatre-ObjVideo">
-                <iframe></iframe>
+                <video id="myVideo" width="100%" height="auto" draggable="false" style="pointer-events: false;">
+                    <source src="/assets/app/otrmrr/videos/ego-wip-ergojump.mp4" type="video/mp4"></source>
+                </video>
             </div>
             <div class="scnTheatre-Gears">
-                <div class="scnTheatre-Gear" id="right"></div>
-                <div class="scnTheatre-Gear" id="left"></div>
+                <div class="scnTheatre-Gear" id="right">
+                    <object data="/assets/app/otrmrr/res/objTheatreGear.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="scnTheatre-Gear" id="left">
+                    <object data="/assets/app/otrmrr/res/objTheatreGear.svg" type="image/svg+xml"></object>
+                </div>
             </div>
             <div class="scnTheatre-Curtains">
-                <div class="scnTheatre-Curtain" id="right"></div>
-                <div class="scnTheatre-Curtain" id="left"></div>
+                <div class="scnTheatre-Curtain" id="right">
+                    <object data="/assets/app/otrmrr/res/objTheatreStageCurtain.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="scnTheatre-Curtain" id="left">
+                    <object data="/assets/app/otrmrr/res/objTheatreStageCurtain.svg" type="image/svg+xml"></object>
+                </div>
             </div>
             <div class="scnTheatre-Stage">
+                <object data="/assets/app/otrmrr/res/objTheatreStage.svg" type="image/svg+xml"></object>
                 <div class="scnTheatre-StageFloor"></div>
                 <div class="scnTheatre-StageLights"></div>
             </div>
             <div class="scnTheatre-Seats">
-                <div class="scnTheatre-SeatRow" id="first"></div>
-                <div class="scnTheatre-SeatRow" id="second"></div>
-                <div class="scnTheatre-SeatRow" id="thrid"></div>
+                <div class="scnTheatre-SeatRow" id="second">
+                    <object data="/assets/app/otrmrr/res/objTheatreChairRow2.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="scnTheatre-SeatRow" id="first">
+                    <object data="/assets/app/otrmrr/res/objTheatreChairRow1.svg" type="image/svg+xml"></object>
+                </div>
             </div>
             <div class="scnTheatre-FilmReelCase">
                 <div class="scnTheatre-Wheel">
                     <div class="scnTheatre-WheelVignettes">
-                        <div class="scnTheatre-WgeelVigenette"></div>
+                        <div class="scnTheatre-WheelVigenette"></div>
                     </div>
                 </div>
                 <div class="scnTheatre-SearchBar"></div>
@@ -43,3 +57,15 @@ permalink: /theatre/
         </div>
     </div>
 </div>
+<script>
+    gsap.fromTo("#right.scnTheatre-Curtain", {x:0}, {x:650, duration:1, delay:3})
+    gsap.fromTo("#left.scnTheatre-Curtain", {x:0}, {x:-650, duration:1, delay:3})
+    const domTheatreVideoContent = document.querySelector("#myVideo")
+    const domTheatreVideo = document.querySelector("scnTheatre-ObjVideo")
+    
+    document.addEventListener("keydown", (event) => {
+        if (event.key == "e") {
+            domTheatreVideoContent.play();
+        }
+    })
+</script>
